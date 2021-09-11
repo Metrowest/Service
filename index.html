@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Personalizado</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+      body {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: linear-gradient(135deg, #b9d3c5, #81d8c9);
+      }
+
+      .container {
+        max-width: 90%;
+        width: 100%;
+        max-width: 400px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+        display: flex;
+      }
+
+      .selectbox {
+        width: 50%;
+        margin: auto;
+      }
+
+      .select {
+        background: rgb(195, 247, 221);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        cursor: pointer;
+        align-items: center;
+        transition: 0.2s ease all;
+        margin-bottom: 10px;
+        z-index: 200;
+        border: 2px solid transparent;
+        width: 260px;
+        margin-left: 10px;
+      }
+
+      .select.active,
+      .select:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+        border: 2px solid #213f8f;
+      }
+
+      .select.active:before {
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        border-top: 15px solid #218f6a;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid transparent;
+        bottom: -30px;
+        left: calc(50% - 15px);
+      }
+      .select i {
+        font-size: 20px;
+        margin-top: 0%;
+        margin-left: 95%;
+        color: #213f8f;
+      }
+      .descripcion {
+        font-size: 15px;
+        color: #434343;
+      }
+      .titulo {
+        margin-bottom: 10px;
+        color: #000;
+
+        font-weight: 400;
+        font-size: 25px;
+      }
+      .opciones {
+        background: #fff;
+        color: rgb(65, 117, 110);
+        border-radius: 10px;
+        border-color: rgb(11, 241, 241);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+        max-height: 400px;
+        overflow: auto;
+        z-index: 50;
+        width: 260px;
+        margin-left: 0%;
+        display: none;
+      }
+      .opciones.active {
+        display: block;
+        animation: fadeIn 0.3s forwards;
+      }
+      .text-align {
+        margin-top: -3%;
+        margin-bottom: -9%;
+        padding: 10%;
+        margin-left: 0%;
+      }
+      .form-check-label {
+        margin-left: 40px;
+        text-align: center;
+      }
+      .formulario__titulo,
+      .formulario__subtitulo,
+      .formulario__parrafo {
+        text-align: center;
+        margin-top: 0;
+      }
+      .formulario__titulo {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .formulario__subtitulo {
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .form-check-input {
+        background-color: rgb(113, 251, 205);
+        color: rgb(56, 128, 118);
+      }
+      .formulario__subtitulo {
+        font-size: 25px;
+      }
+      .form-control {
+        width: 260px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        display: flex;
+        font-size: 1, 3em;
+      }
+      .form-control.input {
+        margin-left: 100px;
+      }
+      .form-control.Cantidad {
+        width: 100px;
+      }
+      .formulario__input {
+        width: 260px;
+        margin-left: 10px;
+        display: block;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        font-size: 1, 3em;
+        background-color: rgb(184, 252, 229);
+        color: rgb(65, 117, 110);
+        border-radius: 10px;
+        border-color: rgb(11, 241, 241);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 0 rgb(47, 110, 95);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+      .register-heading {
+        margin-left: 0%;
+        margin-bottom: 0%;
+        color: black;
+      }
+      .register-heading h1 {
+        margin-left: 0%;
+        margin-bottom: 0%;
+        color: black;
+      }
+      .register {
+        background: -webkit-linear-gradient(left, white);
+        margin-top: 3%;
+        padding: 3%;
+        border-radius: 2.5rem;
+      }
+      .btnSubmit {
+        background: rgb(56, 128, 118);
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        width: 50%;
+        font-size: 1, 3em;
+        box-shadow: 0 5px 0 rgb(47, 110, 95);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+      .btnSubmit:hover {
+        /* transform: scale(0.99); */
+        top: 3px;
+        box-shadow: 0 6px 0 rgb(14, 26, 24);
+        background: linear-gradient(-135deg, #174e34, #5c6e6d);
+      }
+      @keyframes fadeIn {
+        from {
+          transform: translateY(-200px) scale(0.5);
+        }
+
+        to {
+          transform: translateY(0) scale(1);
+        }
+      }
+      .contenido-opcion {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        transition: 0.2s ease all;
+      }
+      .opciones .contenido-opcion {
+        padding: 20px;
+      }
+      .contenido-opcion img {
+        width: 55px;
+        height: 70px;
+        margin-right: 30px;
+      }
+      .opciones .contenido-opcion:hover {
+        background: #19695e;
+      }
+      .opciones .contenido-opcion:hover .titulo,
+      .opciones .contenido-opcion:hover .descripcion {
+        color: #fff;
+      }
+
+      @media screen and (max-width: 400px) {
+        .selectbox {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container register">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            class="tab-pane fade show active text-align form-new"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <h3 class="formulario__titulo">SOLICITUD DE LITERATURA</h3>
+            <h6 class="formulario__subtitulo">
+              Solicite su literatura por WhatsApp
+            </h6>
+            <div class="row register-form">
+              <div class="col-md-12">
+                <form method="post" autocomplete="off" name="google-sheet">
+                  <div class="form-group"></div>
+                  <div class="row g-3">
+                    <div class="col-sm">
+                      <input
+                        type="text"
+                        name="Nombre"
+                        id="Nombre"
+                        class="form-control"
+                        placeholder="Nombre"
+                        value=""
+                        required=""
+                      /><br />
+                    </div>
+
+                    <div class="col-sm">
+                      <input
+                        type="text"
+                        name="Apellido"
+                        id="Apellido"
+                        class="form-control"
+                        placeholder="Apellido"
+                        value=""
+                        required=""
+                      /><br />
+                    </div>
+                    <select id="Grupo" name="Grupo" class="formulario__input">
+                      <option>Grupo de servicio</option>
+                      <option>1 Carlos Fajardo</option>
+                      <option>2 Jorge A. Carlo</option>
+                      <option>3 Walter Figueroa</option>
+                      <option>4 Lázaro Cabrera</option>
+                      <option>5 Harold Morales</option>
+                      <option>6 Juan Moa</option>
+                      <option>7 David Hernández</option>
+                    </select>
+                  </div>
+
+                  <br />
+                  <div class="row register-form">
+                    <div class="col-md-12"></div>
+
+                    <div class="select" id="select" name="select">
+                      <div class="contenido-select">
+                        <h1 class="titulo">Solicite su literatura</h1>
+                      </div>
+                      <i class="fas fa-angle-down"></i>
+                    </div>
+
+                    <div class="opciones" id="opciones">
+                      <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                          <img src="img/Enseña.png" alt="" />
+                          <div class="textos">
+                            <h1 class="titulo">Nos ensena</h1>
+                            <p class="descripcion">Articulo 5340</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                          <img src="img/Buenas noticias.png" alt="" />
+                          <div class="textos">
+                            <h1 class="titulo">Buenas noticias</h1>
+                            <p class="descripcion">Articulo 6659</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                          <img src="img/Invit. reuniones.png" alt="" />
+                          <div class="textos">
+                            <h1 class="titulo">Invit. para las reuniones</h1>
+                            <p class="descripcion">Articulo 7305</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                          <img src="img/La voluntad de Jehova.png" alt="" />
+                          <div class="textos">
+                            <h1 class="titulo">La voluntad de Jehová</h1>
+                            <p class="descripcion">Articulo 6660</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                          <img src="img/Disfrute (libro).jpg" alt="" />
+                          <div class="textos">
+                            <h1 class="titulo">Disfrute de la vida (libro)</h1>
+                            <p class="descripcion">Articulo 5445</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <br />
+                    <div class="col-sm">
+                      <br />
+                      <input
+                        type="number"
+                        name="Cantidad"
+                        id="Cantidad"
+                        class="form-control"
+                        placeholder="Cantidad"
+                        value=""
+                        required=""
+                      />
+                    </div>
+                    <div>
+                      <div class="paragraf">
+                        <p4
+                          ><br />NOTA: Después de solicitar su literatura
+                          presione el botón “Enviar a WhatsApp”. La solicitud será enviada al encargado de literatura.<br />
+                        </p4>
+                      </div>
+                      <br />
+                      <div class="form-group">
+                        <input
+                          type="submit"
+                          name="submit"
+                          onclick="gotowhatsapp()"
+                          class="btnSubmit btn-block"
+                          value="Enviar a WhatsApp"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <input
+                    type="hidden"
+                    name="Articulo"
+                    id="inputSelect"
+                    value=""
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyqi3f-D5CS6XroIHV1ZyzNYJsAm60xx3LVsB9gJ4MkCj5_dOBtyNopV-9ySKzwupqT/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => alert("Se ha enviado su aplicación"))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      function gotowhatsapp() {
+        var Nombre = document.getElementById("Nombre").value;
+        var Apellido = document.getElementById("Apellido").value;
+        var Grupo = document.getElementById("Grupo").value;
+        var inputSelect = document.getElementById("inputSelect").value;
+        var Cantidad = document.getElementById("Cantidad").value;
+
+        var url =
+          "https://wa.me/14072760568?text=" +
+          "SOLICITUD DE LITERATURA" +
+          "%0a" +
+          "Nombre: " +
+          Nombre +
+          "%0a" +
+          "Apelldo: " +
+          Apellido +
+          "%0a" +
+          "Grupo: " +
+          Grupo +
+          "%0a" +
+          "inputSelect: " +
+          inputSelect +
+          "%0a" +
+          "Cantidad: " +
+          Cantidad +
+          "%0a";
+
+        window.open(url, "_blank").focus();
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxkgWotCMyvIKoT9aGtPCndZdHtHrq8i972t9CKAVjO6xC7T0I/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => alert("Se ha enviado su aplicación."))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      const select = document.querySelector("#select");
+      const opciones = document.querySelector("#opciones");
+      const contenidoSelect = document.querySelector(
+        "#select .contenido-select"
+      );
+      const hiddenInput = document.querySelector("#inputSelect");
+
+      document.querySelectorAll("#opciones > .opcion").forEach((opcion) => {
+        opcion.addEventListener("click", (e) => {
+          e.preventDefault();
+          contenidoSelect.innerHTML = e.currentTarget.innerHTML;
+          select.classList.toggle("active");
+          opciones.classList.toggle("active");
+          hiddenInput.value =
+            e.currentTarget.querySelector(".titulo").innerText;
+        });
+      });
+
+      select.addEventListener("click", () => {
+        select.classList.toggle("active");
+        opciones.classList.toggle("active");
+      });
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
