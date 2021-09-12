@@ -26,10 +26,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 0px;
         background: linear-gradient(135deg, #b9d3c5, #81d8c9);
       }
-
+      .imgLogo {
+  width: 280px;
+  height: 150px;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+  margin-left: -15px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /*border: 1px solid rgba(109, 86, 10, 0.7);*/
+}
+.paragraf{
+  font-size: 18px;
+}
       .container {
         max-width: 90%;
         width: 100%;
@@ -90,9 +103,9 @@
       .titulo {
         margin-bottom: 10px;
         color: #000;
-
+        
         font-weight: 400;
-        font-size: 25px;
+        font-size: 20px;
       }
       .opciones {
         background: #fff;
@@ -116,6 +129,8 @@
         margin-bottom: -9%;
         padding: 10%;
         margin-left: 0%;
+        text-align: center;
+        font-size: 18px;
       }
       .form-check-label {
         margin-left: 40px;
@@ -128,25 +143,22 @@
         margin-top: 0;
       }
       .formulario__titulo {
-        font-size: 30px;
         font-weight: 600;
+
       }
       .formulario__subtitulo {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 500;
       }
       .form-check-input {
         background-color: rgb(113, 251, 205);
         color: rgb(56, 128, 118);
       }
-      .formulario__subtitulo {
-        font-size: 25px;
-      }
       .form-control {
         width: 260px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         display: flex;
-        font-size: 1, 3em;
+        font-size: 20px;
       }
       .form-control.input {
         margin-left: 100px;
@@ -159,7 +171,7 @@
         margin-left: 10px;
         display: block;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        font-size: 1, 3em;
+        font-size: 18px;
         background-color: rgb(184, 252, 229);
         color: rgb(65, 117, 110);
         border-radius: 10px;
@@ -246,17 +258,17 @@
   <body>
     <div class="container register">
       <div class="row">
-        <div class="col-md-12">
+        
           <div
             class="tab-pane fade show active text-align form-new"
             id="home"
             role="tabpanel"
             aria-labelledby="home-tab"
-          >
-            <h3 class="formulario__titulo">SOLICITUD DE LITERATURA</h3>
-            <h6 class="formulario__subtitulo">
+          ><div class="col-md-12"><img src="img/logo.jpg" class="imgLogo"/>
+            <h3 class="formulario__titulo">
+            <h5 class="formulario__subtitulo">
               Solicite su literatura por WhatsApp
-            </h6>
+            </h5>
             <div class="row register-form">
               <div class="col-md-12">
                 <form method="post" autocomplete="off" name="google-sheet">
@@ -455,9 +467,8 @@
                       </a>
 
                     </div>
-                    <br />
-                    <div class="col-sm">
-                      <br />
+                    
+                    <div class="col-sm"><br>
                       <input
                         type="number"
                         name="Cantidad"
@@ -595,4 +606,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
-
