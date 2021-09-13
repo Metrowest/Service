@@ -537,20 +537,16 @@
     </div>
 
     <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyqi3f-D5CS6XroIHV1ZyzNYJsAm60xx3LVsB9gJ4MkCj5_dOBtyNopV-9ySKzwupqT/exec";
-      const form = document.forms["google-sheet"];
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby-df-79iSXdKmqXh4BsQQPbgQaDTbovTBlarSDNPxfWPjnB8hANXOOwuYvNeMwgvXLlQ/exec'
+      const form = document.forms['google-sheet']
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, {
-          method: "POST",
-          body: new FormData(form),
-        })
-          .then((response) => alert("Se ha enviado su aplicación"))
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+      form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+              .then(response => alert("Se ha enviado su aplicación"))
+              .catch(error => console.error('Error!', error.message))
+      })
+  </script>
 
     <script>
       function gotowhatsapp() {
