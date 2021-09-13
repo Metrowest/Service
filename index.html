@@ -28,6 +28,7 @@
         align-items: center;
         padding: 0px;
         background: linear-gradient(135deg, #b9d3c5, #81d8c9);
+        margin-left: 5px;
       }
       .imgLogo {
   width: 280px;
@@ -75,7 +76,7 @@
       .select.active,
       .select:hover {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-        border: 2px solid #213f8f;
+        border: 2px solid #218f6a;
       }
 
       .select.active:before {
@@ -87,14 +88,15 @@
         border-right: 15px solid transparent;
         border-bottom: 15px solid transparent;
         border-left: 15px solid transparent;
-        bottom: -30px;
+        bottom: -90px;
         left: calc(50% - 15px);
+        position: relative;
       }
       .select i {
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 0%;
-        margin-left: 95%;
-        color: #213f8f;
+        margin-left: 90%;
+        color: #218f6a;
       }
       .descripcion {
         font-size: 15px;
@@ -150,6 +152,9 @@
         font-size: 25px;
         font-weight: 500;
       }
+      .paragraf{
+        margin-left: 0px;
+      }
       .form-check-input {
         background-color: rgb(113, 251, 205);
         color: rgb(56, 128, 118);
@@ -163,7 +168,7 @@
       .form-control.input {
         margin-left: 100px;
       }
-      .form-control.Cantidad {
+      .Cantidad {
         width: 100px;
       }
       .formulario__input {
@@ -307,14 +312,15 @@
                       <option>6 Juan Moa</option>
                       <option>7 David Hernández</option>
                     </select>
-                  </div>
+                  </div><br>
 
-                  <br />
+                  
                   <div class="row register-form">
+                    <br /><div class="selectbox"></div>
                     <div class="col-md-12"></div>
-
-                    <div class="select" id="select" name="select">
-                      <div class="contenido-select">
+                    
+                      <div class="select" id="select">
+                        <div class="contenido-select">
                         <h1 class="titulo">Solicite su literatura</h1>
                       </div>
                       <i class="fas fa-angle-down"></i>
@@ -465,10 +471,27 @@
                           </div>
                         </div>
                       </a>
-
+                      <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                          <img src="img/Atalaya.jpg" alt="" />
+                          <div class="textos">
+                            <h1 class="titulo">Atalaya</h1>
+                            <p class="descripcion">Articulo 2021A</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                          <img src="img/Despertad.jpg" alt="" />
+                          <div class="textos">
+                            <h1 class="titulo">Despertad</h1>
+                            <p class="descripcion">Articulo 2021D</p>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                     
-                    <div class="col-sm"><br>
+                    <div class="col-sm">
                       <input
                         type="number"
                         name="Cantidad"
