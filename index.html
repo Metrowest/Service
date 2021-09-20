@@ -302,22 +302,23 @@
                         required=""
                       /><br />
                     </div>
-                    <select id="Grupo" name="Grupo" class="formulario__input">
-                      <option>Grupo de servicio</option>
-                      <option>1 Carlos Fajardo</option>
-                      <option>2 Jorge A. Carlo</option>
-                      <option>3 Walter Figueroa</option>
-                      <option>4 Lázaro Cabrera</option>
-                      <option>5 Harold Morales</option>
-                      <option>6 Juan Moa</option>
-                      <option>7 David Hernández</option>
-                    </select>
-                  </div><br>
+                      <div class="form-group col-md-4">
+                        <select id="Grupo" name="Grupo" class="form-control">
+                          <option>Grupo de servicio</option>
+                          <option>1 Carlos Fajardo</option>
+                          <option>2 Jorge A. Carlo</option>
+                          <option>3 Walter Figueroa</option>
+                          <option>4 Lázaro Cabrera</option>
+                          <option>5 Harold Morales</option>
+                          <option>6 Juan Moa</option>
+                          <option>7 David Hernández</option>
+                        </select>
+                      </div><br>
 
                   
                   <div class="row register-form">
                     <br /><div class="selectbox"></div>
-                    <div class="col-md-12"></div>
+                    <div class="col-sm">
                     
                       <div class="select" id="select">
                         <div class="contenido-select">
@@ -576,22 +577,6 @@
 
         window.open(url, "_blank").focus();
       }
-    </script>
-
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxkgWotCMyvIKoT9aGtPCndZdHtHrq8i972t9CKAVjO6xC7T0I/exec";
-      const form = document.forms["google-sheet"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, {
-          method: "POST",
-          body: new FormData(form),
-        })
-          .then((response) => alert("Se ha enviado su aplicación."))
-          .catch((error) => console.error("Error!", error.message));
-      });
     </script>
 
     <script>
