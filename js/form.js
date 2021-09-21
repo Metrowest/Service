@@ -5,7 +5,7 @@
         e.preventDefault()
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-  let telefono = "14075019418";
+  let telefono = "14072760568";
 
   let Nombre = document.querySelector("#Nombre").value;
   let Apellido = document.querySelector("#Apellido").value;
@@ -21,7 +21,7 @@
   resp.classList.remove("fail");
   resp.classList.remove("send");
 
-  let url = `https://api.whatsapp.com/send?phone=14075019418&text=
+  let url = `https://api.whatsapp.com/send?phone=14072760568&text=
 		Solicitud de literatura%0A
 
 		Nombre%0A
