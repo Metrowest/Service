@@ -1,610 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Literatura</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/2c36e9b7b1.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="css/estilos.css" />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-      body {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        background: linear-gradient(135deg, #b9d3c5, #81d8c9);
-        margin-left: 5px;
-      }
-      .imgLogo {
-  width: 280px;
-  height: 150px;
-  border-radius: 150px;
-  display: block;
-  margin: auto;
-  margin-left: -15px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  /*border: 1px solid rgba(109, 86, 10, 0.7);*/
-}
-.paragraf{
-  font-size: 18px;
-}
-      .container {
-        max-width: 90%;
-        width: 100%;
-        max-width: 400px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-        display: flex;
-      }
-
-      .selectbox {
-        width: 50%;
-        margin: auto;
-      }
-
-      .select {
-        background: rgb(195, 247, 221);
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
-        border-radius: 10px;
-        cursor: pointer;
-        align-items: center;
-        transition: 0.2s ease all;
-        margin-bottom: 10px;
-        z-index: 200;
-        border: 2px solid transparent;
-        width: 260px;
-        margin-left: 10px;
-      }
-
-      .select.active,
-      .select:hover {
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-        border: 2px solid #218f6a;
-      }
-
-      .select.active:before {
-        content: "";
-        display: block;
-        height: 0;
-        width: 0;
-        border-top: 15px solid #218f6a;
-        border-right: 15px solid transparent;
-        border-bottom: 15px solid transparent;
-        border-left: 15px solid transparent;
-        bottom: -90px;
-        left: calc(50% - 15px);
-        position: relative;
-      }
-      .select i {
-        font-size: 25px;
-        margin-top: 0%;
-        margin-left: 90%;
-        color: #218f6a;
-      }
-      .descripcion {
-        font-size: 15px;
-        color: #434343;
-      }
-      .titulo {
-        margin-bottom: 10px;
-        color: #000;
-        
-        font-weight: 400;
-        font-size: 20px;
-      }
-      .opciones {
-        background: #fff;
-        color: rgb(65, 117, 110);
-        border-radius: 10px;
-        border-color: rgb(11, 241, 241);
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-        max-height: 400px;
-        overflow: auto;
-        z-index: 50;
-        width: 260px;
-        margin-left: 0%;
-        display: none;
-      }
-      .opciones.active {
-        display: block;
-        animation: fadeIn 0.3s forwards;
-      }
-      .text-align {
-        margin-top: -3%;
-        margin-bottom: -9%;
-        padding: 10%;
-        margin-left: 0%;
-        text-align: center;
-        font-size: 18px;
-      }
-      .form-check-label {
-        margin-left: 40px;
-        text-align: center;
-      }
-      .formulario__titulo,
-      .formulario__subtitulo,
-      .formulario__parrafo {
-        text-align: center;
-        margin-top: 0;
-      }
-      .formulario__titulo {
-        font-weight: 600;
-
-      }
-      .formulario__subtitulo {
-        font-size: 25px;
-        font-weight: 500;
-      }
-      .paragraf{
-        margin-left: 0px;
-      }
-      .form-check-input {
-        background-color: rgb(113, 251, 205);
-        color: rgb(56, 128, 118);
-      }
-      .form-control {
-        width: 260px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        display: flex;
-        font-size: 20px;
-      }
-      .form-control.input {
-        margin-left: 100px;
-      }
-      .Cantidad {
-        width: 100px;
-      }
-      .formulario__input {
-        width: 260px;
-        margin-left: 10px;
-        display: block;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        font-size: 18px;
-        background-color: rgb(184, 252, 229);
-        color: rgb(65, 117, 110);
-        border-radius: 10px;
-        border-color: rgb(11, 241, 241);
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-        box-shadow: 0 1px 0 rgb(47, 110, 95);
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-      }
-      .register-heading {
-        margin-left: 0%;
-        margin-bottom: 0%;
-        color: black;
-      }
-      .register-heading h1 {
-        margin-left: 0%;
-        margin-bottom: 0%;
-        color: black;
-      }
-      .register {
-        background: -webkit-linear-gradient(left, white);
-        margin-top: 3%;
-        padding: 3%;
-        border-radius: 2.5rem;
-      }
-      .btnSubmit {
-        background: rgb(56, 128, 118);
-        color: white;
-        padding: 10px 20px;
-        cursor: pointer;
-        border: none;
-        border-radius: 20px;
-        width: 50%;
-        font-size: 1, 3em;
-        box-shadow: 0 5px 0 rgb(47, 110, 95);
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-      }
-      .btnSubmit:hover {
-        /* transform: scale(0.99); */
-        top: 3px;
-        box-shadow: 0 6px 0 rgb(14, 26, 24);
-        background: linear-gradient(-135deg, #174e34, #5c6e6d);
-      }
-      @keyframes fadeIn {
-        from {
-          transform: translateY(-200px) scale(0.5);
-        }
-
-        to {
-          transform: translateY(0) scale(1);
-        }
-      }
-      .contenido-opcion {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        transition: 0.2s ease all;
-      }
-      .opciones .contenido-opcion {
-        padding: 20px;
-      }
-      .contenido-opcion img {
-        width: 55px;
-        height: 70px;
-        margin-right: 30px;
-      }
-      .opciones .contenido-opcion:hover {
-        background: #19695e;
-      }
-      .opciones .contenido-opcion:hover .titulo,
-      .opciones .contenido-opcion:hover .descripcion {
-        color: #fff;
-      }
-
-      @media screen and (max-width: 400px) {
-        .selectbox {
-          width: 100%;
-        }
-      }
-    </style>
   </head>
-
   <body>
-    <div class="container register">
-      <div class="row">
+    <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
+      <img src="img/logo.jpg" class="imgLogo" />
+
+      <h1 class="formulario__titulo">Literatura</h1>
+      <p class="formulario__parrafo">
+        Solicite su literatura por WhatsApp
+      </p>
+      <div class="container-box">
+        <input
+          type="text"
+          name="Nombre"
+          id="Nombre"
+          class="formulario__input"
+          placeholder="Nombre"
+          value="">
+        </input>
         
-          <div
-            class="tab-pane fade show active text-align form-new"
-            id="home"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-          ><div class="col-md-12"><img src="img/logo.jpg" class="imgLogo"/>
-            <h3 class="formulario__titulo">
-            <h5 class="formulario__subtitulo">
-              Solicite su literatura por WhatsApp
-            </h5>
-            <div class="row register-form">
-              <div class="col-md-12">
-                <form method="post" autocomplete="off" name="google-sheet">
-                  <div class="form-group"></div>
-                  <div class="row g-3">
-                    <div class="col-sm">
-                      <input
-                        type="text"
-                        name="Nombre"
-                        id="Nombre"
-                        class="form-control"
-                        placeholder="Nombre"
-                        value=""
-                        required=""
-                      /><br />
-                    </div>
+        <input
+          type="text"
+          name="Apellido"
+          id="Apellido"
+          class="formulario__input"
+          placeholder="Apellido"
+          value="">
+        </input>
+      </div>
+      <div class= "selectbox">
+        <select id="Grupo" name="Grupo" class="formulario__input"         placeholder="Apellido">
+            <option>Grupo de servicio</option>
+            <option>1 Carlos Fajardo</option>
+            <option>2 Jorge A. Carlo</option>
+            <option>3 Walter Figueroa</option>
+            <option>4 Lázaro Cabrera</option>
+            <option>5 Harold Morales</option>
+            <option>6 Juan Moa</option>
+            <option>7 David Hernández</option>
+        </select>
+      </div>
+      <div class="formulario__input" >
+        <select id="Articulo1" name="Articulo1" class="formulario__input">
+          <option>Kit de enseñanza</option>
+          <option>Nos Enseña</option>
+          <option>Buenas noticias</option>
+          <option>Invit. para las reuniones</option>
+          <option>La voluntad de Jehová</option>
+          <option>Disfrute de la vida (libro)</option>
+          <option>Disfrute de la vida (folleto)</option>
+          <option>Escuche a Dios y vivirá</option>
+          <option>Continue en el amor</option>
+          <option>La Biblia T-30</option>
+          <option>¿Cómo ve el futuro? T-31</option>
+          <option>¿Que hace falta para ser una familia feliz? T-32</option>
+          <option>¿Quien controla realmente el mundo? T-33</option>
+          <option>¿Dejaremos de sufrir algún día? T-34</option>
+          <option>¿Será posble que los muertos vuelvan a vivir? T-35</option>
+          <option>¿Qué es el Reino de Dios? T-36</option>
+          <option>¿Dónde hallar respuestas a las grandes cuestiones de la vida? T-37</option>
+        </select>
 
-                    <div class="col-sm">
-                      <input
-                        type="text"
-                        name="Apellido"
-                        id="Apellido"
-                        class="form-control"
-                        placeholder="Apellido"
-                        value=""
-                        required=""
-                      /><br />
-                    </div>
-                      <div class="form-group col-md-4">
-                        <select id="Grupo" name="Grupo" class="form-control">
-                          <option>Grupo de servicio</option>
-                          <option>1 Carlos Fajardo</option>
-                          <option>2 Jorge A. Carlo</option>
-                          <option>3 Walter Figueroa</option>
-                          <option>4 Lázaro Cabrera</option>
-                          <option>5 Harold Morales</option>
-                          <option>6 Juan Moa</option>
-                          <option>7 David Hernández</option>
-                        </select>
-                      </div><br>
-
-                  
-                  <div class="row register-form">
-                    <br /><div class="selectbox"></div>
-                    <div class="col-sm">
-                    
-                      <div class="select" id="select">
-                        <div class="contenido-select">
-                        <h1 class="titulo">Solicite su literatura</h1>
-                      </div>
-                      <i class="fas fa-angle-down"></i>
-                    </div>
-
-                    <div class="opciones" id="opciones">
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Enseña.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Nos ensena</h1>
-                            <p class="descripcion">Articulo 5340</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Buenas noticias.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Buenas noticias</h1>
-                            <p class="descripcion">Articulo 6659</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Invit. reuniones.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Invit. para las reuniones</h1>
-                            <p class="descripcion">Articulo 7305</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/La voluntad de Jehova.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">La voluntad de Jehová</h1>
-                            <p class="descripcion">Articulo 6660</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Disfrute(libro).jpg" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Disfrute de la vida (libro)</h1>
-                            <p class="descripcion">Articulo 5445</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Disfrute(folleto).jpg" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Disfrute de la vida (folleto)</h1>
-                            <p class="descripcion">Articulo 65445</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Escuche y vivira.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Escuche a Dios y vivirá</h1>
-                            <p class="descripcion">Articulo 6657</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Continue.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Continue en el amor</h1>
-                            <p class="descripcion">Articulo 5343</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/La Biblia.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">La Biblia T-30</h1>
-                            <p class="descripcion">Articulo 7130</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Como ve el futuro.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">¿Cómo ve el futuro? T-31</h1>
-                            <p class="descripcion">Articulo 7131</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Familia feliz.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">¿Que hace falta para ser una familia feliz? T-32</h1>
-                            <p class="descripcion">Articulo 7132</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Quien controla el mundo.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">¿Quien controla realmente el mundo? T-33</h1>
-                            <p class="descripcion">Articulo 7133</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Dejaremos de sufrir.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">¿Dejaremos de sufrir algún día? T-34</h1>
-                            <p class="descripcion">Articulo 7134</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Volver a vivir.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">¿Será posble que los muertos vuelvan a vivir? T-35</h1>
-                            <p class="descripcion">Articulo 7135</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Reino.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">¿Qué es el Reino de Dios? T-36</h1>
-                            <p class="descripcion">Articulo 7136</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Visite jw.org.png" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">¿Dónde hallar respuestas a las grandes cuestiones de la vida? T-37</h1>
-                            <p class="descripcion">Articulo 7137</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Atalaya.jpg" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Atalaya</h1>
-                            <p class="descripcion">El volumen que recibira no es necesariamente el que esta en la foto.</p>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="opcion">
-                        <div class="contenido-opcion">
-                          <img src="img/Despertad.jpg" alt="" />
-                          <div class="textos">
-                            <h1 class="titulo">Despertad</h1>
-                            <p class="descripcion">El volumen que recibira no es necesariamente el que esta en la foto.</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    
-                    <div class="col-sm">
-                      <input
-                        type="number"
-                        name="Cantidad"
-                        id="Cantidad"
-                        class="form-control"
-                        placeholder="Cantidad"
-                        value=""
-                        required=""
-                      />
-                    </div>
-                    <div>
-                      <div class="paragraf">
-                        <p4
-                          ><br />NOTA: Debe tener la aplicación WhatsApp instalada en su dispositivo. Después de llenar la forma presione el botón “Enviar a WhatsApp”. Una vez la solicitud abra en WhatsApp, estará listo para enviar su aplicación. El mensaje será dirigido al encargado de literatura.</p4>
-                      </div>
-                      <br />
-                      <div class="form-group">
-                        <input
-                          type="submit"
-                          name="submit"
-                          onclick="gotowhatsapp()"
-                          class="btnSubmit btn-block"
-                          value="Enviar a WhatsApp"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <input
-                    type="hidden"
-                    name="Articulo"
-                    id="inputSelect"
-                    value=""
-                  />
-                </form>
-              </div>
-            </div>
-          </div>
+        <input
+          type="number"
+          name="Cantidad1"
+          id="Cantidad1"
+          class="formulario__box"
+          placeholder="Cantidad"
+          value=""
+          />
+        </input>
+      </div>
+      <div class="formulario__input" >
+        <select id="Articulo2" name="Articulo2" class="formulario__input">
+          <option>Kit de enseñanza</option>
+          <option>Nos Enseña</option>
+          <option>Buenas noticias</option>
+          <option>Invit. para las reuniones</option>
+          <option>La voluntad de Jehová</option>
+          <option>Disfrute de la vida (libro)</option>
+          <option>Disfrute de la vida (folleto)</option>
+          <option>Escuche a Dios y vivirá</option>
+          <option>Continue en el amor</option>
+          <option>La Biblia T-30</option>
+          <option>¿Cómo ve el futuro? T-31</option>
+          <option>¿Que hace falta para ser una familia feliz? T-32</option>
+          <option>¿Quien controla realmente el mundo? T-33</option>
+          <option>¿Dejaremos de sufrir algún día? T-34</option>
+          <option>¿Será posble que los muertos vuelvan a vivir? T-35</option>
+          <option>¿Qué es el Reino de Dios? T-36</option>
+          <option>¿Dónde hallar respuestas a las grandes cuestiones de la vida? T-37</option>
+        </select>
+        <div class="col-sm">
+          <input
+            type="number"
+            name="Cantidad2"
+            id="Cantidad2"
+            class="formulario__box"
+            placeholder="Cantidad"
+            value=""
+          />
+        </div>
+      </div>    
+      <div class="formulario__input" >
+        <select id="Articulo3" name="Articulo3" class="formulario__input">
+          <option>Kit de enseñanza</option>
+          <option>Nos Enseña</option>
+          <option>Buenas noticias</option>
+          <option>Invit. para las reuniones</option>
+          <option>La voluntad de Jehová</option>
+          <option>Disfrute de la vida (libro)</option>
+          <option>Disfrute de la vida (folleto)</option>
+          <option>Escuche a Dios y vivirá</option>
+          <option>Continue en el amor</option>
+          <option>La Biblia T-30</option>
+          <option>¿Cómo ve el futuro? T-31</option>
+          <option>¿Que hace falta para ser una familia feliz? T-32</option>
+          <option>¿Quien controla realmente el mundo? T-33</option>
+          <option>¿Dejaremos de sufrir algún día? T-34</option>
+          <option>¿Será posble que los muertos vuelvan a vivir? T-35</option>
+          <option>¿Qué es el Reino de Dios? T-36</option>
+          <option>¿Dónde hallar respuestas a las grandes cuestiones de la vida? T-37</option>
+        </select>
+        <div class="col-sm">
+          <input
+            type="number"
+            name="Cantidad3"
+            id="Cantidad3"
+            class="formulario__box"
+            placeholder="Cantidad"
+            value=""
+            />
         </div>
       </div>
-    </div>
+        <div id="respuesta"></div>
+      </div>
 
+        <button id="submit" class="formulario__submit">Confirma en WhatsApp</button>
+        
+      </div> 
+    </form>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwHcJK5WgZF-X0OGBLN6LVuV1Dn2kebQMBq-6MzuFukMF4tHv47/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwHcJK5WgZF-X0OGBLN6LVuV1Dn2kebQMBq-6MzuFukMF4tHv47/exec'
       const form = document.forms['google-sheet']
-
       form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-              .then(response => alert("Se ha enviado su aplicación"))
-              .catch(error => console.error('Error!', error.message))
-      })
-  </script>
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 
-    <script>
-      function gotowhatsapp() {
-        var Nombre = document.getElementById("Nombre").value;
-        var Apellido = document.getElementById("Apellido").value;
-        var Grupo = document.getElementById("Grupo").value;
-        var inputSelect = document.getElementById("inputSelect").value;
-        var Cantidad = document.getElementById("Cantidad").value;
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        var url =
-          "https://wa.me/14072760568?text=" +
-          "SOLICITUD DE LITERATURA" +
-          "%0a" +
-          "Nombre: " +
-          Nombre +
-          "%0a" +
-          "Apelldo: " +
-          Apellido +
-          "%0a" +
-          "Grupo: " +
-          Grupo +
-          "%0a" +
-          "inputSelect: " +
-          inputSelect +
-          "%0a" +
-          "Cantidad: " +
-          Cantidad +
-          "%0a";
-
-        window.open(url, "_blank").focus();
-      }
-    </script>
-
-    <script>
-      const select = document.querySelector("#select");
-      const opciones = document.querySelector("#opciones");
-      const contenidoSelect = document.querySelector(
-        "#select .contenido-select"
-      );
-      const hiddenInput = document.querySelector("#inputSelect");
-
-      document.querySelectorAll("#opciones > .opcion").forEach((opcion) => {
-        opcion.addEventListener("click", (e) => {
-          e.preventDefault();
-          contenidoSelect.innerHTML = e.currentTarget.innerHTML;
-          select.classList.toggle("active");
-          opciones.classList.toggle("active");
-          hiddenInput.value =
-            e.currentTarget.querySelector(".titulo").innerText;
-        });
-      });
-
-      select.addEventListener("click", () => {
-        select.classList.toggle("active");
-        opciones.classList.toggle("active");
-      });
-    </script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
