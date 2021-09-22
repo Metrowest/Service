@@ -51,8 +51,9 @@ body {
   margin-top: 0;
 }
 .formulario__titulo{
-  color: #c50e0e;
+  color: #d11515;
   text-shadow: 0 2px 0 #720101;
+  font-weight: bold;
 }
 .formulario__parrafo {
   color: #ececec;
