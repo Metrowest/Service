@@ -25,7 +25,8 @@
           id="Nombre"
           class="formulario__input"
           placeholder="Nombre"
-          value="">
+          value=""
+          required="">
         </input>
         
         <input
@@ -34,11 +35,12 @@
           id="Apellido"
           class="formulario__input"
           placeholder="Apellido"
-          value="">
+          value=""
+          required="">
         </input>
       </div>
       <div class= "selectbox">
-        <select id="Grupo" name="Grupo" class="formulario__input"         placeholder="Apellido">
+        <select id="Grupo" name="Grupo" class="formulario__input"         placeholder="Grupo" required="">
             <option>Grupo de servicio</option>
             <option>1 Carlos Fajardo</option>
             <option>2 Jorge A. Carlo</option>
@@ -145,7 +147,7 @@
         <div id="respuesta"></div>
       </div>
 
-        <button id="submit" class="formulario__submit">Confirma en WhatsApp</button>
+        <button id="submit" class="formulario__submit">Confirme en WhatsApp</button>
         
       </div> 
     </form>
@@ -155,7 +157,7 @@
       form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Confirme su solicitud en WhatsApp"))
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
