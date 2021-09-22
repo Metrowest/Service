@@ -151,8 +151,10 @@ body {
 }
 
 .formulario__submit:hover {
-  top: 3px;
+
   box-shadow: 0 2px 0 #720101;
+  box-shadow: 0 6px 0 rgb(14, 26, 24);
+  background: linear-gradient(-135deg, #af0b0b, #720101);
   }
 
 /*Centrar los campos del formulario (Los input y el boton de Enviar al WhatsApp, que tambien es un input)*/
@@ -179,6 +181,6 @@ body {
   font-size: 20px;
 }
 #respuesta.send {
-  color: rgb(8, 221, 8);
+  color: rgb(30, 202, 39);
   font-size: 20px;
 }
