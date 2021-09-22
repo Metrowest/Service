@@ -79,7 +79,7 @@ body {
 .formulario__box{
   display: block;
   width: 70%;
-  font-size: 27px;
+  font-size: 25px;
   font-size: 1, 3em;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -107,7 +107,7 @@ body {
   border: 1px solid #747474;
   margin-bottom: 15px;
   border-radius: 10px;
-  font-size: 27px;
+  font-size: 25px;
   color: white;
   background: #494949;
 }
