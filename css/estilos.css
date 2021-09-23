@@ -11,16 +11,54 @@ body {
   background: black;
   margin-left: 5px
 }
-
-.formulario__input{
-  background: #2f3640;
-  color: #f5f6fa;
-  border-radius: 8px;
-  position: relative;
-  width: 100%;
-  padding: 10px;
-
+.nav ul {
+  margin: 0;
+  background-color: rgb(119, 119, 119);
 }
+
+.nav li {
+  display: inline;
+  font-size: 16px;
+  justify-content: space-between;
+  
+}
+
+.nav a {
+  justify-content: space-between;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.main-nav {
+  padding: 10px;
+  max-width: 100%;
+  margin: auto;
+  background-color: #777;
+  box-shadow: 0 0 10px 1px white;
+  position: relative;
+  border-radius: 20px;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+.main-nav:hover {
+background-color: #410101;
+box-shadow: 0 2px 0 #720101;
+box-shadow: 0 6px 0 rgb(14, 26, 24);
+background: linear-gradient(-135deg, #525252, #525252);
+}
+.main-nav li {
+  padding: 10px;
+}
+
+.nav a:hover {
+  background-color: rgb(167, 1, 1);
+  border-radius: 20px;
+  padding: 5pt;
+  }
+
 .formulario {
   width: 400px;
   max-width: 100%;
@@ -32,15 +70,26 @@ body {
   background: #868686;
 }
 
-.imgLogo {
-  width: 100%;
-  height: 230px;
-  border-radius: 150px;
-  display: block;
+.formulario__input{
+  padding: 10px;
+  max-width: 100%;
   margin: auto;
-  margin-left: -10px;
-  margin-top: 1em;
-  margin-bottom: 1em
+  background-color: #777;
+  box-shadow: 0 0 10px 1px white;
+  position: relative;
+  border-radius: 20px;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.imgLogo {
+  width: 400px;
+  height: 190px;
+  padding: 10px;
+  display: block;
+  margin-left: -20px;
+
   /*border: 1px solid rgba(109, 86, 10, 0.7);*/
 }
 
@@ -49,11 +98,13 @@ body {
 .formulario__parrafo {
   text-align: center;
   margin-top: 0;
+  margin: auto;
 }
 .formulario__titulo{
-  color: #d11515;
+  color: #b91616;
   text-shadow: 0 2px 0 #720101;
   font-weight: bold;
+  margin: auto;
 }
 .formulario__parrafo {
   color: #ececec;
@@ -66,7 +117,7 @@ body {
   width: 100%;
   border: 1px solid #494949;
   margin-bottom: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 2px 0 black;
@@ -74,33 +125,37 @@ body {
   transition: all .2s ease-in-out;
 }
 .formulario__input:hover {
-  top: 3px;
-  box-shadow: 0 5px 0 black
+  background-color: white;
+  border-radius: 10px;
+  padding: 5pt;
+  color: #000;
   }
 
 .formulario__box{
   display: block;
-  width: 70%;
+  width: 50%;
   font-size: 25px;
   font-size: 1, 3em;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid #720101;
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 2px 0 #5c5c5c;
+  box-shadow: 0 5px 0 #720101;
   -webkit-transition: all .2s ease-in-out;
   transition: all .5s ease-in-out;
-  background: #3d3d3d;
+  background: #af0b0b;
   color: #f5f6fa;
-  border-radius: 8px;
+  border-radius: 10px;
   position: relative;
   padding: 10px
 }
 
 .formulario__box:hover {
-  top: 3px;
-  box-shadow: 0 5px 0 #5c5c5c;
+  box-shadow: 0 2px 0 #720101;
+  box-shadow: 0 6px 0 rgb(14, 26, 24);
+  background-color: #f5f6fa;
+  color: #000;
   }
 .formulario__input {
   padding: 10px;
@@ -121,6 +176,35 @@ body {
 /*.formulario__input:focus + .formulario__label{
     margin-top: -120px;
 }*/
+
+
+
+.formulario__input1 {
+padding: 10px;
+max-width: 100%;
+margin: auto;
+background-color: #777;
+box-shadow: 0 0 10px 1px white;
+position: relative;
+border-radius: 20px;
+font-size: 1.1em;
+font-weight: lighter;
+border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+.section-header{
+  text-align: center;
+  color: #b91616;
+}
+
+
+
+
+
+.formulario__input1:focus {
+  /*outline: 1px solid rgba(0,0,0,0.7);*/
+  outline: none;
+  box-shadow: 0px 0px 2px #5c5c5c;
+}
 .formulario__label {
   padding-left: 15px;
   /*position: absolute;*/
@@ -133,7 +217,7 @@ body {
 }
 .formulario__submit {
   display: block;
-  width: 70%;
+  width: 100%;
   font-size: 25px;
   font-size: 1, 3em;
   text-align: center;
@@ -152,7 +236,6 @@ body {
 }
 
 .formulario__submit:hover {
-
   box-shadow: 0 2px 0 #720101;
   box-shadow: 0 6px 0 rgb(14, 26, 24);
   background: linear-gradient(-135deg, #af0b0b, #720101);
