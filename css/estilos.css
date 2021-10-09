@@ -1,16 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
 * {
   box-sizing: border-box;
-  border-radius: 20px;
+  font-family: Raleway;
+  color: rgb(155, 155, 155);
 }
+
+html,
 body {
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  background: black;
-  margin-left: 5px
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #000;
 }
+
 .nav ul {
   margin: 0;
   background-color: rgb(119, 119, 119);
@@ -20,7 +24,6 @@ body {
   display: inline;
   font-size: 16px;
   justify-content: space-between;
-  
 }
 
 .nav a {
@@ -41,13 +44,13 @@ body {
   border-radius: 20px;
   font-size: 1.1em;
   font-weight: lighter;
-  border-bottom: 1px solid rgba(255, 255, 255, .3)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .main-nav:hover {
-background-color: #410101;
-box-shadow: 0 2px 0 #720101;
-box-shadow: 0 6px 0 rgb(14, 26, 24);
-background: linear-gradient(-135deg, #525252, #525252);
+  background-color: #410101;
+  box-shadow: 0 2px 0 #720101;
+  box-shadow: 0 6px 0 rgb(14, 26, 24);
+  background: linear-gradient(-135deg, #525252, #525252);
 }
 .main-nav li {
   padding: 10px;
@@ -57,216 +60,644 @@ background: linear-gradient(-135deg, #525252, #525252);
   background-color: rgb(167, 1, 1);
   border-radius: 20px;
   padding: 5pt;
-  }
+}
 
-.formulario {
-  width: 400px;
+.imgLogo {
+  width: 300px;
+  height: 175px;
+  padding: 10px;
+  display: block;
+  margin-left: -20px;
+}
+
+
+
+
+
+
+.contenedor {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contenedor_tarjeta {
+  margin: 10px;
+}
+
+.contenedor_tarjeta a {
+  display: inline-block;
+}
+
+.contenedor_tarjeta:hover figure {
+  transform: perspective(600px) rotateY(180deg);
+  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor_tarjeta:hover figure img {
+  /* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
+  filter: blur(2px);
+}
+
+figure {
+  width: 200px;
+  height: 250px;
+  margin: 10;
+  padding: 10px;
+  position: relative;
+  transition: all ease 0.3s;
+  transform-style: preserve-3d;
+  /* Nota:
+		Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
+		ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
+	*/
+  transform: perspective(300px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all ease 1s;
+  box-shadow: 0 4px 8px 0 rgb(148, 148, 148);
+  background-color: rgb(46, 46, 46);
+}
+
+figure .frontal,
+figure .trasera:hover {
+  box-shadow: 0 8px 16px 0 rgb(255, 238, 6);
+}
+
+figure .frontal {
+  display: block;
+  background: #000;
+
+  /* Podemos ocultar la imagen al da la vuelta si lo queremos */
+  /*backface-visibility: hidden;*/
+}
+
+figure .trasera {
+  position: fixed;
+  top: 0;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 30px;
+  color: #fff;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera {
+  background: rgba(223, 234, 241, 0.7);
+  background: -moz-linear-gradient(
+    top,
+    rgba(223, 234, 241, 0.7) 0%,
+    rgba(15, 99, 144, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(223, 234, 241, 0.7)),
+    color-stop(100%, rgba(15, 99, 144, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(223, 234, 241, 0.7) 0%,
+    rgba(15, 99, 144, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(223, 234, 241, 0.7) 0%,
+    rgba(15, 99, 144, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(223, 234, 241, 0.7) 0%,
+    rgba(15, 99, 144, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(223, 234, 241, 0.7) 0%,
+    rgba(15, 99, 144, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(2) figure .trasera {
+  background: rgba(251, 232, 202, 0.7);
+  background: -moz-linear-gradient(
+    top,
+    rgba(251, 232, 202, 0.7) 0%,
+    rgba(25, 44, 72, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(251, 232, 202, 0.7)),
+    color-stop(100%, rgba(25, 44, 72, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(251, 232, 202, 0.7) 0%,
+    rgba(25, 44, 72, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(251, 232, 202, 0.7) 0%,
+    rgba(25, 44, 72, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(251, 232, 202, 0.7) 0%,
+    rgba(25, 44, 72, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(251, 232, 202, 0.7) 0%,
+    rgba(25, 44, 72, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(3) figure .trasera {
+  background: rgba(95, 58, 53, 0.7);
+  background: -moz-linear-gradient(
+    top,
+    rgba(95, 58, 53, 0.7) 0%,
+    rgba(221, 32, 47, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(95, 58, 53, 0.7)),
+    color-stop(100%, rgba(221, 32, 47, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(95, 58, 53, 0.7) 0%,
+    rgba(221, 32, 47, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(95, 58, 53, 0.7) 0%,
+    rgba(221, 32, 47, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(95, 58, 53, 0.7) 0%,
+    rgba(221, 32, 47, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(95, 58, 53, 0.7) 0%,
+    rgba(221, 32, 47, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}
+
+figure .trasera .titulo {
+  color: #fff;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  position: relative;
+}
+
+figure .trasera .descripcion{
+  color: #000;
+  font-weight: normal;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  
+}
+
+figure .trasera hr {
+  height: 2px;
+  background: #fff;
+  border: none;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+figure .trasera p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 22px;
+  font-size: 14px;
+
+}
+
+
+
+
+
+
+
+.formulario__parrafo {
+  color: white;
+  font-size: 12pt;
+  padding: 10px;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  background-color: #777;
+  box-shadow: 0 0 10px 1px white;
+  position: relative;
+  border-radius: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.formulario__parrafo:hover {
+  background-color: #410101;
+  box-shadow: 0 2px 0 #720101;
+  box-shadow: 0 6px 0 rgb(14, 26, 24);
+  background: linear-gradient(-135deg, #525252, #525252);
+}
+.formulario__input {
+  display: block;
+  color: white;
+  width: 100%;
+  border: 1px solid #494949;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-left: auto;
+  background-color: rgb(48, 48, 48);
+  margin-right: auto;
+  box-shadow: 0 2px 0 black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  /*border: 1px solid rgba(109, 86, 10, 0.7);*/
+}
+.formulario__input:hover {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5pt;
+  color: #000;
+}
+/*
+.band-name {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  color: white;
+}
+
+.band-name-large {
+  font-size: 50px;
+  font-weight: bold;
+}
+*/
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  width: 300px;
   max-width: 100%;
   margin: auto;
   margin-top: 30px;
   padding: 20px;
   box-shadow: 0 0 10px 1px white;
   position: relative;
-  background: #868686;
+  background: #afaeae;
 }
-
-.formulario__input{
-  padding: 10px;
-  max-width: 100%;
-  margin: auto;
-  background-color: #777;
-  box-shadow: 0 0 10px 1px white;
-  position: relative;
-  border-radius: 20px;
-  font-size: 1.1em;
-  font-weight: lighter;
-  border-bottom: 1px solid rgba(255, 255, 255, .3)
-}
-
-.imgLogo {
-  width: 400px;
-  height: 190px;
-  padding: 10px;
-  display: block;
-  margin-left: -20px;
-
-  /*border: 1px solid rgba(109, 86, 10, 0.7);*/
-}
-
-.formulario__titulo,
-.formulario__subtitulo,
-.formulario__parrafo {
-  text-align: center;
-  margin-top: 0;
-  margin: auto;
-}
-.formulario__titulo{
-  color: #b91616;
-  text-shadow: 0 2px 0 #720101;
+.section-header {
   font-weight: bold;
-  margin: auto;
-}
-.formulario__parrafo {
-  color: #ececec;
-  font-size: 15pt;
-}
-.formulario__input,
-.formulario__label {
-  display: block;
-  color: rgb(107, 107, 107);
-  width: 100%;
-  border: 1px solid #494949;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 2px 0 black;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-.formulario__input:hover {
-  background-color: white;
-  border-radius: 10px;
-  padding: 5pt;
-  color: #000;
-  }
-
-.formulario__box{
-  display: block;
-  width: 40%;
-  font-size: 25px;
-  font-size: 1, 3em;
+  color: black;
   text-align: center;
-  border: 2px solid #000000;
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 5px 0 #313131;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .5s ease-in-out;
-  background: #494949;
-  color: #f5f6fa;
-  border-radius: 10px;
-  position: relative;
-  padding: 10px
+  font-size: 30px;
+}
+.section-subheader {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -20px;
+  }
+/*
+.about-band-image {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 50%;
 }
 
-.formulario__box:hover {
-  box-shadow: 0 2px 0 #292929;
-  box-shadow: 0 6px 0 rgb(14, 26, 24);
-  background-color: #f5f6fa;
-  color: #000;
-  }
-.formulario__input {
-  padding: 10px;
-  background: transparent;
-  /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
-  border: 1px solid #747474;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  font-size: 25px;
+.main-footer {
+    background-color: #868686;
+    color: white;
+    padding: .25em 0;
+    width: 300px;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 60px;
+    height: 60px;
+}*/
+.parrafo {
+  font-size: 16px;
   color: white;
-  background: #494949;
 }
-.formulario__input:focus {
-  /*outline: 1px solid rgba(0,0,0,0.7);*/
-  outline: none;
-  box-shadow: 0px 0px 2px #5c5c5c;
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+  width: 100%;
 }
-/*.formulario__input:focus + .formulario__label{
-    margin-top: -120px;
+
+.btn-header {
+  margin: 0.5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2d9cdb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: red;
+  font-size: 4em;
+  border-radius: 50%;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-primary {
+  color: white;
+  background-color: rgb(167, 1, 1);
+  border: none;
+  border-radius: 0.3em;
+  font-size: 18px;
+  width: 175px;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 100pt;
+ 
+}
+
+.btn-primary:hover {
+  background-color: #410101;
+  box-shadow: 0 2px 0 #720101;
+  box-shadow: 0 6px 0 rgb(14, 26, 24);
+  background: linear-gradient(-135deg, #c50c0c, #c50c0c);
+}
+/*
+.tour-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+  border: none;
+}
+
+.tour-item {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.tour-date {
+  color: #555;
+  width: 11%;
+  font-weight: bold;
+}
+
+.tour-city {
+  width: 24%;
+}
+
+.tour-arena {
+  width: 42%;
+}
+
+.tour-btn {
+  max-width: 19%;
+  width: 100%;
+}
+*/
+.shop-item {
+  margin: -5px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.shop-item-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all ease 1s;
+  box-shadow: 0 4px 8px 0 rgb(148, 148, 148);
+  background-color: rgb(46, 46, 46);
+}
+
+.shop-item-image1 {
+  width: 130px;
+  height: 100px;
+  margin-left: 25%;
+}
+.shop-item-image2 {
+  width: 60px;
+  height: 125px;
+  margin-left: 38%;
+}
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  font-size: 1px;
+  color: #868686;
+  display: none;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 30px;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+  font-size: 20px;
+}
+/*
+.cart-price {
+    width: 20%;
+    font-size: 10px;
+    color: ##868686
 }*/
 
-
-
-.formulario__input1 {
-padding: 10px;
-max-width: 100%;
-margin: auto;
-background-color: #777;
-box-shadow: 0 0 10px 1px white;
-position: relative;
-border-radius: 20px;
-font-size: 1.1em;
-font-weight: lighter;
-border-bottom: 1px solid rgba(255, 255, 255, .3)
+.cart-quantity {
+  width: 35%;
+  font-size: 20px;
 }
-.section-header{
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 10px;
+}
+
+.cart-item-image {
+  width: 55px;
+  height: 70px;
+  margin-right: 30px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.btn-danger:hover {
+  background-color: #410101;
+  box-shadow: 0 2px 0 #720101;
+  box-shadow: 0 6px 0 rgb(14, 26, 24);
+  background: linear-gradient(-135deg, #c50c0c, #c50c0c);
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
   text-align: center;
-  color: #b91616;
+  font-size: 1.2em;
+  margin-right: 25px;
 }
 
-
-
-
-
-.formulario__input1:focus {
-  /*outline: 1px solid rgba(0,0,0,0.7);*/
-  outline: none;
-  box-shadow: 0px 0px 2px #5c5c5c;
+.cart-row:last-child {
+  border-bottom: 1px solid black;
 }
-.formulario__label {
-  padding-left: 15px;
-  /*position: absolute;*/
-  /*margin-top: -78px;*/
-  /*z-index: -20;*/
-  color: rgba(0, 0, 0, 0.7);
-  /*transition: all 0.2s;*/
-  margin: 2px;
-  
+
+.cart-row:last-child .cart-column {
+  border: none;
 }
+
+/*.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 1px;
+    color: ##868686
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 10px;
+}*/
+
 .formulario__submit {
   display: block;
   width: 100%;
-  font-size: 25px;
+  margin-top: 5px;
+  font-size: 18px;
   font-size: 1, 3em;
   text-align: center;
   border: 2px solid #720101;
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 5px 0 #720101;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .5s ease-in-out;
+
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background: #af0b0b;
   color: #f5f6fa;
   border-radius: 8px;
   position: relative;
-  padding: 10px
+  padding: 10px;
 }
 
 .formulario__submit:hover {
+  background-color: #410101;
   box-shadow: 0 2px 0 #720101;
   box-shadow: 0 6px 0 rgb(14, 26, 24);
-  background: linear-gradient(-135deg, #af0b0b, #720101);
-  }
-
-/*Centrar los campos del formulario (Los input y el boton de Enviar al WhatsApp, que tambien es un input)*/
-
-.formulario__input,
-.formulario__submit {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*.fijar {
-    margin-top: -120px;
-} */
-
-/* respuesta del formulario */
-#respuesta {
-  width: 100%;
-  height: 50px;
-  margin: 5px;
-  padding: 5px;
-}
-#respuesta.fail {
-  color: red;
-  font-size: 25px;
-  text-align: center;
-}
-#respuesta.send {
-  color: rgb(30, 202, 39);
-  font-size: 25px;
-  text-align: center;
+  background: linear-gradient(-135deg, #c50c0c, #c50c0c);
 }
