@@ -3,7 +3,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
 
     //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-    let telefono = "14075019418";
+    let telefono = "14072760568";
 
     let Nombre = document.querySelector("#Nombre").value;
     let Apellido = document.querySelector("#Apellido").value;
