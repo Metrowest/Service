@@ -69,242 +69,6 @@ body {
   display: block;
   margin-left: -20px;
 }
-
-
-
-
-
-
-.contenedor {
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.contenedor_tarjeta {
-  margin: 10px;
-}
-
-.contenedor_tarjeta a {
-  display: inline-block;
-}
-
-.contenedor_tarjeta:hover figure {
-  transform: perspective(600px) rotateY(180deg);
-  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
-}
-
-.contenedor_tarjeta:hover figure img {
-  /* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
-  filter: blur(2px);
-}
-
-figure {
-  width: 200px;
-  height: 250px;
-  margin: 10;
-  padding: 10px;
-  position: relative;
-  transition: all ease 0.3s;
-  transform-style: preserve-3d;
-  /* Nota:
-		Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
-		ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
-	*/
-  transform: perspective(300px) rotateY(0deg);
-}
-
-figure .frontal,
-figure .trasera {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  transition: all ease 1s;
-  box-shadow: 0 4px 8px 0 rgb(148, 148, 148);
-  background-color: rgb(46, 46, 46);
-}
-
-figure .frontal,
-figure .trasera:hover {
-  box-shadow: 0 8px 16px 0 rgb(255, 238, 6);
-}
-
-figure .frontal {
-  display: block;
-  background: #000;
-
-  /* Podemos ocultar la imagen al da la vuelta si lo queremos */
-  /*backface-visibility: hidden;*/
-}
-
-figure .trasera {
-  position: fixed;
-  top: 0;
-  text-align: center;
-  padding-top: 15%;
-  font-size: 30px;
-  color: #fff;
-  transform: perspective(600px) rotateY(180deg);
-  backface-visibility: hidden;
-  overflow: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contenedor_tarjeta:nth-child(1) figure .trasera {
-  background: rgba(223, 234, 241, 0.7);
-  background: -moz-linear-gradient(
-    top,
-    rgba(223, 234, 241, 0.7) 0%,
-    rgba(15, 99, 144, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(223, 234, 241, 0.7)),
-    color-stop(100%, rgba(15, 99, 144, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(223, 234, 241, 0.7) 0%,
-    rgba(15, 99, 144, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(223, 234, 241, 0.7) 0%,
-    rgba(15, 99, 144, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(223, 234, 241, 0.7) 0%,
-    rgba(15, 99, 144, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(223, 234, 241, 0.7) 0%,
-    rgba(15, 99, 144, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
-}
-
-.contenedor_tarjeta:nth-child(2) figure .trasera {
-  background: rgba(251, 232, 202, 0.7);
-  background: -moz-linear-gradient(
-    top,
-    rgba(251, 232, 202, 0.7) 0%,
-    rgba(25, 44, 72, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(251, 232, 202, 0.7)),
-    color-stop(100%, rgba(25, 44, 72, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(251, 232, 202, 0.7) 0%,
-    rgba(25, 44, 72, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(251, 232, 202, 0.7) 0%,
-    rgba(25, 44, 72, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(251, 232, 202, 0.7) 0%,
-    rgba(25, 44, 72, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(251, 232, 202, 0.7) 0%,
-    rgba(25, 44, 72, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
-}
-
-.contenedor_tarjeta:nth-child(3) figure .trasera {
-  background: rgba(95, 58, 53, 0.7);
-  background: -moz-linear-gradient(
-    top,
-    rgba(95, 58, 53, 0.7) 0%,
-    rgba(221, 32, 47, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(95, 58, 53, 0.7)),
-    color-stop(100%, rgba(221, 32, 47, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(95, 58, 53, 0.7) 0%,
-    rgba(221, 32, 47, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(95, 58, 53, 0.7) 0%,
-    rgba(221, 32, 47, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(95, 58, 53, 0.7) 0%,
-    rgba(221, 32, 47, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(95, 58, 53, 0.7) 0%,
-    rgba(221, 32, 47, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
-}
-
-figure .trasera .titulo {
-  color: #fff;
-  font-weight: normal;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  position: relative;
-}
-
-figure .trasera .descripcion{
-  color: #000;
-  font-weight: normal;
-  margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  
-}
-
-figure .trasera hr {
-  height: 2px;
-  background: #fff;
-  border: none;
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-figure .trasera p {
-  font-family: "Open Sans", sans-serif;
-  line-height: 22px;
-  font-size: 14px;
-
-}
-
-
-
-
-
-
-
 .formulario__parrafo {
   color: white;
   font-size: 12pt;
@@ -467,12 +231,8 @@ figure .trasera p {
   border: none;
   border-radius: 0.3em;
   font-size: 18px;
-  width: 175px;
+  width: 280px;
   border-radius: 10px;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 100pt;
- 
 }
 
 .btn-primary:hover {
@@ -517,31 +277,24 @@ figure .trasera p {
 }
 */
 .shop-item {
-  margin: -5px;
+  margin: 30px;
 }
 
 .shop-item-title {
   display: block;
   width: 100%;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   color: #000;
   margin-bottom: 15px;
 }
 
 .shop-item-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  transition: all ease 1s;
-  box-shadow: 0 4px 8px 0 rgb(148, 148, 148);
-  background-color: rgb(46, 46, 46);
+  width: 75px;
+  height: 100px;
+  margin-left: 35%;
 }
-
 .shop-item-image1 {
   width: 130px;
   height: 100px;
@@ -561,7 +314,6 @@ figure .trasera p {
 .shop-item-price {
   font-size: 1px;
   color: #868686;
-  display: none;
 }
 
 .shop-items {
