@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Literatura</title>
     <link rel="stylesheet" href="css/estilos.css" />
 </head>
+
 <body>
     <section class="container content-section">
         <img src="img/logo.jpg" class="imgLogo" />
@@ -19,6 +20,7 @@
         <section class="container content-section">
             <div class="shop-items">
                 <h2 class="section-header" id=section-header>Kit de enseñanza</h2>
+            </div>
                 <h2 class="section-subheader" id=section-subheader>Libros</h2>
                 <nav class="main-nav nav">
                     <!--<ul>-->
@@ -39,8 +41,8 @@
                     </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Disfrute de la vida (libro)</span>
-                    <img class="shop-item-image" src="img/Disfrute (libro).jpg" />
+                    <span class="shop-item-title">Continue en el amor de Dios</span>
+                    <img class="shop-item-image" src="img/Continue.png" />
                     <div class="shop-item-details">
                         <span class="shop-item-price">$6.99</span>
                         <button class="btn btn-primary shop-item-button" type="button">
@@ -49,13 +51,12 @@
                     </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Continue en el amor de Dios</span>
-                    <img class="shop-item-image" src="img/Continue.png" />
+                    <span class="shop-item-title">Disfrute de la vida (libro)</span>
+                    <img class="shop-item-image" src="img/Disfrute (libro).jpg" />
                     <div class="shop-item-details">
                         <span class="shop-item-price">$6.99</span>
                         <button class="btn btn-primary shop-item-button" type="button">
                             Añadelo a tu orden
-                        </button>
                     </div>
                 </div>
             </div>
@@ -142,7 +143,8 @@
                     </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">T-37 ¿Dónde hallar respuestas a las grandes cuestiones de la vida?</span>
+                    <span class="shop-item-title">T-37 ¿Dónde hallar respuestas a las grandes cuestiones de la
+                        vida?</span>
                     <img class="shop-item-image" src="img/Visite jw.org.png" />
                     <div class="shop-item-details">
                         <span class="shop-item-price">$6.99</span>
@@ -219,7 +221,8 @@
                     <!--</ul>-->
                 </nav>
                 <p class="parrafo">
-                    NOTA: La foto no necesariamente representa el numero de la revista que recibirá. Todo depende de lo que hay disponible.
+                    NOTA: La foto no necesariamente representa el numero de la revista que recibirá. Todo depende de lo
+                    que hay disponible.
                 </p>
                 <div class="shop-item">
                     <span class="shop-item-title">Atalaya</span>
@@ -256,22 +259,12 @@
                     <li><a href="#section-header4">Revistas</a></li>
                     <!--</ul>-->
                 </nav><br>
-                <input type="text"
-                       name="Nombre"
-                       id="Nombre"
-                       class="formulario__input"
-                       placeholder="Nombre"
-                       value=""
-                       required="">
+                <input type="text" name="Nombre" id="Nombre" class="formulario__input" placeholder="Nombre" value=""
+                    required="">
                 </input>
 
-                <input type="text"
-                       name="Apellido"
-                       id="Apellido"
-                       class="formulario__input"
-                       placeholder="Apellido"
-                       value=""
-                       required="">
+                <input type="text" name="Apellido" id="Apellido" class="formulario__input" placeholder="Apellido"
+                    value="" required="">
                 </input>
 
                 <div class="selectbox">
@@ -298,35 +291,38 @@
             <div class="cart-items">
             </div>
             <div>
+                <div id="respuesta"></div>
                 <button id="submit" class="formulario__submit">Confirme en WhatsApp</button>
             </div>
         </section>
         <section class="container content-section">
-            <p class="formulario__parrafo">
-                NOTA: Después de llenar la forma presione el botón “Confirme en WhatsApp”. Una vez confirme la solicitud en WhatsApp, estará listo para enviar su solicitud. El mensaje será dirigido al encargado de literatura.
+            <p class="parrafo">
+                NOTA: Después de llenar la forma presione el botón “Confirme en WhatsApp”. Una vez confirme la solicitud
+                en WhatsApp, estará listo para enviar su solicitud. El mensaje será dirigido al encargado de literatura.
             </p>
 
             </div><br />
         </section>
 
-        <div class="formulario__parrafo">
+        
 
 
-            <div id="respuesta"></div>
+            
 
 
     </form>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzJ27KUsg9rHPdbwKh1SQpKtyC5LSrPZjOLIssMvUYpRt3dvlnXt3Nz2m_gOJWeHwFU/exec'
-  const form = document.forms['google-sheet']
-  form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Confirme su solicitud en WhatsApp"))
-            .catch(error => console.error('Error!', error.message))
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwHcJK5WgZF-X0OGBLN6LVuV1Dn2kebQMBq-6MzuFukMF4tHv47/exec'
+        
+        const form = document.forms['google-sheet']
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Confirme su solicitud en WhatsApp"))
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 
 
 
@@ -347,5 +343,5 @@
 
     <script src="js/form.js"></script>
 </body>
-</html>
 
+</html>

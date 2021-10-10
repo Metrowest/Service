@@ -3,7 +3,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
 
     //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-    let telefono = "14072760568";
+    let telefono = "14075019418";
 
     let Nombre = document.querySelector("#Nombre").value;
     let Apellido = document.querySelector("#Apellido").value;
@@ -35,7 +35,7 @@ Publicaciones%0A`;
     }
     resp.classList.remove("fail");
     resp.classList.add("send");
-    resp.innerHTML = `${Nombre}, Su orden fue enviada`;
+    resp.innerHTML = `${Nombre}, confirme su solicitud en WhatsApp`;
 
     window.open(url);
 });
@@ -178,5 +178,5 @@ function addItemToCart(title, price, imageSrc) {
   }
   total = Math.round(total * 100) / 100
   document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
-}*/ 
+}*/
 

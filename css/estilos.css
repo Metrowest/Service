@@ -12,7 +12,13 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background-color: #000;
+}
+
+body {
+background-image: url(fondo.jpg);
+background-attachment: fixed;
+margin-top: 30pt;
+margin-bottom: 30pt;
 }
 
 .nav ul {
@@ -22,7 +28,7 @@ body {
 
 .nav li {
   display: inline;
-  font-size: 16px;
+  font-size: 24px;
   justify-content: space-between;
 }
 
@@ -63,16 +69,16 @@ body {
 }
 
 .imgLogo {
-  width: 300px;
-  height: 175px;
+  width: 100%;
+  height: 100%;
   padding: 10px;
   display: block;
-  margin-left: -20px;
+  margin: auto;
 }
 .formulario__parrafo {
   color: white;
-  font-size: 12pt;
-  padding: 10px;
+  font-size: 30pt;
+  padding: 25px;
   max-width: 100%;
   text-align: center;
   margin: auto;
@@ -129,7 +135,7 @@ body {
 }
 
 .container {
-  width: 300px;
+  width: 500px;
   max-width: 100%;
   margin: auto;
   margin-top: 30px;
@@ -143,6 +149,7 @@ body {
   color: black;
   text-align: center;
   font-size: 30px;
+  text-align: center;
 }
 .section-subheader {
     font-weight: bold;
@@ -186,8 +193,12 @@ body {
     height: 60px;
 }*/
 .parrafo {
-  font-size: 16px;
+  font-size: 18px;
   color: white;
+  background-color: #a9a8a8;
+  box-shadow: 0 0 10px 1px;
+  border-radius: 20px;
+  padding: 10px;
 }
 .btn {
   text-align: center;
@@ -233,6 +244,7 @@ body {
   font-size: 18px;
   width: 280px;
   border-radius: 10px;
+  margin: auto;
 }
 
 .btn-primary:hover {
@@ -288,12 +300,15 @@ body {
   font-size: 25px;
   color: #000;
   margin-bottom: 15px;
+  max-width: 250px;
+  margin: auto;
 }
 
 .shop-item-image {
-  width: 75px;
-  height: 100px;
+  width: 100px;
+  height: 140px;
   margin-left: 35%;
+  margin-top: 10px;
 }
 .shop-item-image1 {
   width: 130px;
@@ -317,9 +332,10 @@ body {
 }
 
 .shop-items {
-  display: flex;
+
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-left: 5%;
 }
 
 .cart-header {
@@ -335,6 +351,7 @@ body {
   margin-right: 1.5em;
   padding-bottom: 10px;
   margin-top: 10px;
+  padding-left: 5%;
 }
 
 .cart-row {
@@ -360,7 +377,7 @@ body {
 .cart-item-title {
   color: #333;
   margin-left: 0.5em;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .cart-item-image {
@@ -453,3 +470,23 @@ body {
   box-shadow: 0 6px 0 rgb(14, 26, 24);
   background: linear-gradient(-135deg, #c50c0c, #c50c0c);
 }
+
+
+/* respuesta del formulario */
+#respuesta {
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#respuesta.fail {
+  color: red;
+}
+
+#respuesta.send {
+  color: rgb(0, 255, 0);
+}
+
