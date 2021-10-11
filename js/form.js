@@ -35,7 +35,7 @@ Publicaciones%0A`;
     }
     resp.classList.remove("fail");
     resp.classList.add("send");
-    resp.innerHTML = `${Nombre}, confirmo su orden en WhatsApp`;
+    resp.innerHTML = `${Nombre}, confirme su orden en WhatsApp`;
 
     window.open(url);
 });
