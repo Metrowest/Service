@@ -1,281 +1,200 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Literatura</title>
-    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Literatura | Departamento</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/icono.ico">
 </head>
 
 <body>
-    <section class="container content-section">
-        <img src="img/logo.jpg" class="imgLogo" />
-        <p class="formulario__parrafo">
-            Solicite su literatura por WhatsApp.
-        </p>
-    </section>
     <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
-        <section class="container content-section">
-            <div class="shop-items">
-                <div>
-                    <h2 class="section-header" id=section-header>Kit de enseñanza</h2>
-                </div>
-                <h2 class="section-subheader" id=section-subheader>Libros</h2>
-                <nav class="main-nav nav">
-                    <!--<ul>-->
-                    <li><a href="#section-header4">Revistas</a></li>
-                    <li><a href="#section-header1">Tratados</a></li>
-                    <li><a href="#section-header2">Folletos</a></li>
-                    <li><a href="#section-header3">Vea su orden</a></li>
-                    <!--</ul>-->
+        <nav>
+            <div class="nav-responsive">
+                <img src="img/logo.jpg" alt="image" class="logo" id="logo">
+                <!--<div class="nav-search">
+                    <a href="">
+                        <i class="fa fa-search" id="find">
+                        </i>
+                    </a>
+                    <input type="text" id="search" placeholder="Search your items, brands">
+                </div>-->
+
+
+                <nav id="site-nav" class="site-nav">
+                    <ul>
+                        <li><a href="#section-header0">Libros</a></li>
+                        <li><a href="#section-header1">Tratados</a></li>
+                        <li><a href="#section-header2">Folletos</a></li>
+                        <li><a href="#section-header3">Revistas</a></li>
+                        <li> <a href="#section-header4">Vea su orden</a></li>
+                    </ul>
                 </nav>
+                <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+
+            </div>
+        </nav>
+        <section class="container content-section">
+            <br><br><br>
+            <h2 class="section-header">Kit de enseñanza</h2>
+            <h2 class="section-header" id="section-header0">Libros</h2>
+            <div class="shop-items">
                 <div class="shop-item">
-                    <img class="shop-item-image" src="img/Enseña.png" />
+                    <span class="shop-item-title">¿Que nos enseña la Biblia?</span>
+                    <img class="shop-item-image" src="img/Ensena.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">¿Que nos enseña la Biblia?</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Continue.png" />
+                    <span class="shop-item-title">Continue en el amor de Dios</span>
+                    <img class="shop-item-image" src="img/Continue.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">Continue en el amor de Dios</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Disfrute (libro).jpg" />
+                    <span class="shop-item-title">Disfrute de la vida (libro)</span>
+                    <img class="shop-item-image" src="img/Disfrute (libro).jpg">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">Disfrute de la vida (libro)</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container content-section">
             <h2 class="section-header" id="section-header1">Tratados</h2>
-            <nav class="main-nav nav">
-                <!--<ul>-->
-                <li><a href="#section-header4">Revistas</a></li>
-                <li><a href="#section-header">Libros</a></li>
-                <li><a href="#section-header2">Folletos</a></li>
-                <li><a href="#section-header3">Vea su orden</a></li>
-                <!--</ul>-->
-            </nav>
             <div class="shop-items">
                 <div class="shop-item">
-                    <img class="shop-item-image" src="img/La Biblia.png" />
+                    <span class="shop-item-title">T-30 La Biblia</span>
+                    <img class="shop-item-image" src="img/La Biblia.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">T-30 La Biblia</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Como ve el futuro.png" />
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">T-31 ¿Cómo ve el futuro?</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Familia feliz.png" />
+                    <span class="shop-item-title">T-31 ¿Cómo ve el futuro?</span>
+                    <img class="shop-item-image" src="img/Como ve el futuro.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">T-32 ¿Que hace falta para ser una familia feliz?</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Quien controla el mundo.png" />
+                    <span class="shop-item-title">T-32 ¿Que hace falta para ser una familia feliz?</span>
+                    <img class="shop-item-image" src="img/Familia feliz.png">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">T-33 ¿Quien controla realmente el mundo?</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Dejaremos de sufrir.png" />
+                    <span class="shop-item-title">T-33 ¿Quien controla realmente el mundo?</span>
+                    <img class="shop-item-image" src="img/Quien controla el mundo.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">T-34 ¿Dejaremos de sufrir algún día?</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Volver a vivir.png" />
+                    <span class="shop-item-title">T-34 ¿Dejaremos de sufrir algún día?</span>
+                    <img class="shop-item-image" src="img/Dejaremos de sufrir.png">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">T-35 ¿Será posble que los muertos vuelvan a vivir?</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Reino.png" />
+                    <span class="shop-item-title">T-35 ¿Será posble que los muertos vuelvan a vivir?</span>
+                    <img class="shop-item-image" src="img/Volver a vivir.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">T-36 ¿Qué es el Reino de Dios?</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    <img class="shop-item-image" src="img/Visite jw.org.png" />
+                    <span class="shop-item-title">T-36 ¿Qué es el Reino de Dios?</span>
+                    <img class="shop-item-image" src="img/Reino.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>                    
-                        <span class="shop-item-title">T-37 ¿Dónde hallar respuestas a las grandes cuestiones de la
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">T-37 ¿Dónde hallar respuestas a las grandes cuestiones de la
                         vida?</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
-
-                    </div>
-                </div>
-                <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Invit. reuniones.png" />
+                    <img class="shop-item-image" src="img/Visite jw.org.png">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">Invit. para las reuniones</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container content-section">
-            <h2 class="section-header" Id="section-header2">Folletos</h2>
-            <nav class="main-nav nav">
-                <!--<ul>-->
-                <li><a href="#section-header4">Revistas</a></li>
-                <li><a href="#section-header1">Tratados</a></li>
-                <li><a href="#section-header">Libros</a></li>
-                <li><a href="#section-header3">Vea su orden</a></li>
-                <!--</ul>-->
-            </nav>
+            <h2 class="section-header" id="section-header2">Folletos</h2>
             <div class="shop-items">
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Buenas noticias.png" />
+                    <span class="shop-item-title">Buenas noticias de parte de Dios</span>
+                    <img class="shop-item-image" src="img/Buenas noticias.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">Buenas noticias</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Disfrute(folleto).jpg" />
+                    <span class="shop-item-title">¡Disfrute de la vida para siempre! Introducción a las enseñanzas de la
+                        Biblia (folleto)</span>
+                    <img class="shop-item-image" src="img/Disfrute(folleto).jpg">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">Disfrute de la vida (folleto)</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Escuche y vivira.png" />
+                    <span class="shop-item-title">Escuche a Dios y vivirá para siempre</span>
+                    <img class="shop-item-image" src="img/Escuche y vivira.png">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">Escuche a Dios y vivirá</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container content-section">
-
+            <h2 class="section-header" id="section-header3">Revistas</h2>
             <div class="shop-items">
-                <h2 class="section-header" id=section-header4>Revistas</h2>
-                <nav class="main-nav nav">
-                    <!--<ul>-->
-                    <li><a href="#section-header">Libros</a></li>
-                    <li><a href="#section-header1">Tratados</a></li>
-                    <li><a href="#section-header2">Folletos</a></li>
-                    <li><a href="#section-header3">Vea su orden</a></li>
-                    <!--</ul>-->
-                </nav>
-                <p class="parrafo">
-                    NOTA: La foto no necesariamente representa el numero de la revista que recibirá. Todo depende de lo
-                    que hay disponible.
-                </p>
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Atalaya.jpg" />
+                    <span class="shop-item-title">Atalaya</span>
+                    <img class="shop-item-image" src="img/Atalaya.jpg">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">Atalaya</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
-
                 <div class="shop-item">
-                    
-                    <img class="shop-item-image" src="img/Despertad.jpg" />
+                    <span class="shop-item-title">Despertad</span>
+                    <img class="shop-item-image" src="img/Despertad.jpg">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <span class="shop-item-title">Despertad</span>
-                        <button class="btn btn-primary shop-item-button" type="button">
-                            Ordena
-                        </button>
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
-            </div>
         </section>
-
         <section class="container content-section">
-            <h2 class="section-header" id="section-header3">Vea su orden</h2>
+            <h2 class="section-header" id="section-header4">Vea su orden</h2>
             <div class="container-box">
-                <nav class="main-nav nav">
-                    <!--<ul>-->
-                    <li><a href="#section-header">Libros</a></li>
-                    <li><a href="#section-header1">Tratados</a></li>
-                    <li><a href="#section-header2">Folletos</a></li>
-                    <li><a href="#section-header4">Revistas</a></li>
-                    <!--</ul>-->
-                </nav><br>
                 <input type="text" name="Nombre" id="Nombre" class="formulario__input" placeholder="Nombre" value=""
                     required="">
                 </input>
@@ -299,10 +218,9 @@
             </div>
         </section>
         <section class="container content-section">
-            <h2 class="section-header">CART</h2>
             <div class="cart-row">
-                <span class="cart-item cart-header cart-column" id=cartitemtitle>ITEM</span>
-
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
             <div class="cart-items">
@@ -312,53 +230,63 @@
                 <button id="submit" class="formulario__submit">Confirme en WhatsApp</button>
             </div>
         </section>
-        <section class="container content-section">
-            <p class="parrafo">
-                NOTA: Después de llenar la forma presione el botón “Confirme en WhatsApp”. Una vez confirme la solicitud
-                en WhatsApp, estará listo para enviar su solicitud. El mensaje será dirigido al encargado de literatura.
-            </p>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">Metrowest Spanish</h3>
+                <!-- <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>-->
+            </div>
+        </footer>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwHcJK5WgZF-X0OGBLN6LVuV1Dn2kebQMBq-6MzuFukMF4tHv47/exec'
 
-            </div><br />
-        </section>
+            const form = document.forms['google-sheet']
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => alert("Confirme su solicitud en WhatsApp"))
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
 
-        
-
-
-            
-
-
-    </form>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwHcJK5WgZF-X0OGBLN6LVuV1Dn2kebQMBq-6MzuFukMF4tHv47/exec'
-        
-        const form = document.forms['google-sheet']
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Confirme su solicitud en WhatsApp"))
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwHcJK5WgZF-X0OGBLN6LVuV1Dn2kebQMBq-6MzuFukMF4tHv47/exec'
+            const form = document.forms['google-sheet']
+                //form.addEventListener('submit', e => {
+                //    e.preventDefault()
+                //    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                //        .then(response => alert("Confirme su solicitud en WhatsApp"))
+                //        .catch(error => console.error('Error!', error.message))
+                //})
+        </script>
 
 
 
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwHcJK5WgZF-X0OGBLN6LVuV1Dn2kebQMBq-6MzuFukMF4tHv47/exec'
-        const form = document.forms['google-sheet']
-            //form.addEventListener('submit', e => {
-            //    e.preventDefault()
-            //    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            //        .then(response => alert("Confirme su solicitud en WhatsApp"))
-            //        .catch(error => console.error('Error!', error.message))
-            //})
-    </script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="js/form.js"></script>
+
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="js/app.js"></script>
 </body>
 
 </html>
