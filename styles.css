@@ -6,7 +6,7 @@
 * {
     box-sizing: border-box;
     font-family: Raleway;
-    color: rgb(252, 209, 107);
+
 
 }
 
@@ -169,21 +169,13 @@ html, body {
     text-align: center;
     font-size: 2em;
     color: white;
-    background: linear-gradient(-135deg, rgba(182, 125, 20, 0.445), #3f2d06);
+    background: linear-gradient(-135deg, #3f2d06, rgba(182, 125, 20, 0.445));
     box-shadow: 0 0 10px 1px;
     border-radius: 20px;
     padding: 12px;
     margin-top: 100px;
     width: 100%;
   }
-
-  .section-header5:hover {
-    background-color: #410101;
-    box-shadow: 0 2px 0 #720101;
-    box-shadow: 0 6px 0 rgb(14, 26, 24);
-    background: linear-gradient(-135deg, rgba(182, 125, 20, 0.445), #3f2d06);
-  }
-
 
 .section-header {
     font-weight: bold;
@@ -329,7 +321,7 @@ html, body {
 
 .formulario__input {
     display: block;
-    color: #292929;
+    color: #111111;
     width: 500px;
     font-size: 2.5em;
     height: 75px;
@@ -337,7 +329,7 @@ html, body {
     margin-bottom: 15px;
     border-radius: 10px;
     margin-left: auto;
-    background-color: rgb(255, 201, 114);
+    background-color: rgb(255, 218, 169);
     margin-right: auto;
     box-shadow: 0 2px 0 black;
     -webkit-transition: all 0.2s ease-in-out;
