@@ -150,6 +150,20 @@ html, body {
     padding: 0 1.5em;
 }
 
+.fa, .fab, .fad, .fal, .far, .fas {
+    margin-left: auto;
+    font-size: 30px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 30px/1 FontAwesome;
+    font-size: 50px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .section-header5{
     font-weight: bold;
     text-align: center;
@@ -520,7 +534,7 @@ html, body {
 }
 .site-nav a{
     color: #ebedb3;
-    display: block;
+
     text-transform: uppercase;
     text-decoration: none;
 }
