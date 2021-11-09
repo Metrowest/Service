@@ -14,7 +14,7 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background-color: rgba(255, 230, 185, 0.575);
+    background-color: rgb(19, 19, 19);
 }
 
 .nav-responsive{
