@@ -6,9 +6,11 @@
 * {
     box-sizing: border-box;
     font-family: Raleway;
-
-
 }
+.section.container.content-section {
+    background-color: black;
+}
+
 
 html, body {
     margin: 0;
