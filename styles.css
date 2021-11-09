@@ -166,7 +166,7 @@ html, body {
     text-align: center;
     font-size: 2em;
     color: white;
-    background: linear-gradient(-135deg, #3f2d06, rgba(182, 125, 20, 0.445));
+    background: linear-gradient( -135deg, #9dcfff, rgb(20, 100, 182));
     box-shadow: 0 0 10px 1px;
     border-radius: 20px;
     padding: 12px;
@@ -179,7 +179,7 @@ html, body {
     text-align: center;
     font-size: 2em;
     color: white;
-    background: linear-gradient(-135deg, #ffe09d, rgb(182, 125, 20));
+    background: linear-gradient( -135deg, #9dcfff, rgb(20, 100, 182));
     box-shadow: 0 0 10px 1px;
     border-radius: 20px;
     padding: 12px;
@@ -192,7 +192,7 @@ html, body {
     background-color: #410101;
     box-shadow: 0 2px 0 #720101;
     box-shadow: 0 6px 0 rgb(14, 26, 24);
-    background: linear-gradient(-135deg, rgb(182, 125, 20), #ffe09d);
+    background: linear-gradient(-135deg, rgb(20, 100, 182), #9dcfff);
   }
    
 .about-band-image {
