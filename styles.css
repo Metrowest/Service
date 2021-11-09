@@ -182,7 +182,7 @@ html, body {
     text-align: center;
     font-size: 2em;
     color: white;
-    background: linear-gradient(-135deg, #3f2d06, rgba(182, 125, 20, 0.445));
+    background: linear-gradient(-135deg, #ffe09d, rgb(182, 125, 20));
     box-shadow: 0 0 10px 1px;
     border-radius: 20px;
     padding: 12px;
@@ -195,11 +195,9 @@ html, body {
     background-color: #410101;
     box-shadow: 0 2px 0 #720101;
     box-shadow: 0 6px 0 rgb(14, 26, 24);
-    background: linear-gradient(-135deg, rgba(182, 125, 20, 0.445), #3f2d06);
+    background: linear-gradient(-135deg, rgb(182, 125, 20), #ffe09d);
   }
- 
-
-  
+   
 .about-band-image {
     float: left;
     height: 200px;
@@ -268,7 +266,7 @@ html, body {
   .shop-item {
     margin: 30px;
     width: 300px;
-    background-color: rgba(255, 230, 185, 0.575);
+    background-color: rgb(255, 230, 185);
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
