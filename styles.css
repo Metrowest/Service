@@ -263,7 +263,7 @@ html, body {
   .shop-item {
     margin: 30px;
     width: 300px;
-    background-color: rgb(255, 230, 185);
+    background-color: rgb(153 204 253);
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
