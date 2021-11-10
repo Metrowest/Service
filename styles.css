@@ -280,6 +280,7 @@ html, body {
     font-weight: bold;
     font-size: 2em;
     color: rgb(70, 70, 70);
+    margin-top: 20px;
 }
 
 .shop-item-image {
