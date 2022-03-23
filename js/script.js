@@ -37,3 +37,18 @@ let jsArrow = document.querySelector(".js-arrow");
 jsArrow.onclick = function() {
  navLinks.classList.toggle("show3");
 }
+
+
+
+var activeSubMenu = document.querySelector('.submenu.is--dropdown.active');
+
+var openActiveSubMenu = function () {
+    if (!activeSubMenu.classList.contains('open')) {
+        activeSubMenu.classList.add('open');
+    }
+};
+
+if (activeSubMenu) {
+    openActiveSubMenu();
+    document.addEventListener('click', openActiveSubMenu, false);
+}
