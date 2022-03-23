@@ -67,16 +67,16 @@
                                 </a>
                             </li>
                             <!--<li class="more">
-                <span>
-                    <a href="#">More</a>
-                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                </span>
-                <ul class="more-sub-menu sub-menu">
-                    <li><a href="#">Neumorphism</a></li>
-                    <li><a href="#">Pre-loader</a></li>
-                    <li><a href="#">Glassmorphism</a></li>
-                </ul>
-            </li>-->
+                                <span>
+                                    <a href="#">More</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Neumorphism</a></li>
+                                    <li><a href="#">Pre-loader</a></li>
+                                    <li><a href="#">Glassmorphism</a></li>
+                                </ul>
+                            </li>-->
                         </ul>
                     </li>
                     <li><a href="condiciones.html"><i><img class="img1" src="images/img/c23.png"></i>Condiciones de Uso</a></li>
@@ -557,20 +557,31 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwHcJK5WgZF-X0OGBLN6LVuV1Dn2kebQMBq-6MzuFukMF4tHv47/exec'
         const form = document.forms['google-sheet']
-                                                                            //form.addEventListener('submit', e => {
-                                                                            //    e.preventDefault()
-                                                                            //    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                                                                            //        .then(response => alert("Confirme su solicitud en WhatsApp"))
-                                                                            //        .catch(error => console.error('Error!', error.message))
-                                                                            //})
+            //form.addEventListener('submit', e => {
+            //    e.preventDefault()
+            //    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            //        .then(response => alert("Confirme su solicitud en WhatsApp"))
+            //        .catch(error => console.error('Error!', error.message))
+            //})
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        < script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/lit.1.js"></script>
     <script src="js/lit.2.js"></script>
     <script src="js/button.js"></script>
+    <script>
+        $("a").click(function () {
+            $("nav").removeClass("w--open");
+        });
+$("a").click(function () {
+    $("div").removeClass("w--open");
+});
+    </script>
 </body>
+
 
 </html>
 

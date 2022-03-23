@@ -66,16 +66,16 @@
                                 </a>
                             </li>
                             <!--<li class="more">
-                <span>
-                    <a href="#">More</a>
-                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                </span>
-                <ul class="more-sub-menu sub-menu">
-                    <li><a href="#">Neumorphism</a></li>
-                    <li><a href="#">Pre-loader</a></li>
-                    <li><a href="#">Glassmorphism</a></li>
-                </ul>
-            </li>-->
+                                <span>
+                                    <a href="#">More</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Neumorphism</a></li>
+                                    <li><a href="#">Pre-loader</a></li>
+                                    <li><a href="#">Glassmorphism</a></li>
+                                </ul>
+                            </li>-->
                         </ul>
                     </li>
                     <li><a href="condiciones.html"><i><img class="img1" src="images/img/c23.png"></i>Condiciones de Uso</a></li>
@@ -165,6 +165,13 @@
     </section>
 
     <script src="js/script.js"></script>
-
+    <script>
+        $("a").click(function () {
+            $("nav").removeClass("w--open");
+        });
+        $("a").click(function () {
+            $("div").removeClass("w--open");
+        });
+    </script>
 </body>
 </html>
