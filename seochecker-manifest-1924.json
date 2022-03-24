@@ -1,6 +1,6 @@
 {
 	"short_name": "Metrowest.Service",
-	"name": "Metrowest.Service",
+	"name": "Metrowest",
 	"lang": "en",
 	"description": "Esta aplicación le proveerá algunas herramientas para predicar.",
 	"start_url": "https://metrowest.github.io/Service/",
