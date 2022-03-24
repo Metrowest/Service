@@ -15,10 +15,10 @@
 			"type": "image/x-icon"
 		},
 		{
-			"src": "/apple-icon-512x512-seochecker-manifest-1524.png"
+			"src": "images/apple-icon-512x512-seochecker-manifest-1524.png"
 		},
 		{
-			"src": "/android-icon-192x192-seochecker-manifest-1924.png",
+			"src": "/images/android-icon-192x192-seochecker-manifest-1924.png",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
@@ -28,12 +28,17 @@
 			"sizes": "180x180"
 		},
 		{
-			"src": "/maskable_icon_x48.png",
+			"src": "images/maskable_icon_x48.png",
 			"type": "image/png",
 			"sizes": "48x48"
 		},
 		{
 			"src": "/images/icons/maskable_icon_x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "https://metrowest.github.io/Service/images/apple-icon-512x512-seochecker-manifest-1924.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		},
@@ -48,12 +53,12 @@
 			"sizes": "512x512"
 		},
 		{
-			"src": "//Service/images/icons/maskable_icon_x512.png",
+			"src": "/Service/images/icons/maskable_icon_x512.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		},
 		{
-			"src": "/apple-icon-152x152-seochecker-manifest-1924.png",
+			"src": "images/apple-icon-152x152-seochecker-manifest-1924.png",
 			"type": "image/png",
 			"sizes": "152x152"
 		},
@@ -125,14 +130,14 @@
 	],
 	"screenshots": [
 		{
-			"src": "Service/images/screenshots/screenshot1.png",
+			"src": "/images/screenshots/screenshot1.png",
 			"sizes": "1280x720",
 			"type": "image/webp",
 			"platform": "wide",
 			"label": "Homescreen of Awesome App"
 		},
 		{
-			"src": "screenshots/screenshot2.png",
+			"src": "images/screenshots/screenshot2.png",
 			"sizes": "1280x720",
 			"type": "image/webp",
 			"platform": "wide",
