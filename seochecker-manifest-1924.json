@@ -15,7 +15,9 @@
 			"type": "image/x-icon"
 		},
 		{
-			"src": "images/apple-icon-512x512-seochecker-manifest-1524.png"
+			"src": "/images/apple-icon-512x512-seochecker-manifest-1524.png",
+			"type": "image/png",
+			"sizes": "512x512"
 		},
 		{
 			"src": "/images/android-icon-192x192-seochecker-manifest-1924.png",
