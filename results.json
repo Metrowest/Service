@@ -15,6 +15,132 @@
       }
     },
     {
+      "filePath": "/android-icon-192x192-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-180x180-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/maskable_icon_x48.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/maskable_icon_x512.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-152x152-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/maskable_icon_x48-seochecker-manifest-1624",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/maskable_icon_x512-seochecker-manifest-1624.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-152x152-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-144x144-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-120x120-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-114x114-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/favicon-96x96-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-76x76-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-72x72-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-60x60-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-57x57-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/favicon-32x32-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/favicon-16x16-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
       "filePath": "next-steps.html",
       "success": true
     },
@@ -41,6 +167,132 @@
     },
     {
       "filePath": "/apple-icon-512x512-seochecker-manifest-1524.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/android-icon-192x192-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-180x180-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/maskable_icon_x48.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/maskable_icon_x512.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-152x152-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/maskable_icon_x48-seochecker-manifest-1624",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/maskable_icon_x512-seochecker-manifest-1624.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-152x152-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-144x144-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-120x120-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-114x114-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/favicon-96x96-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-76x76-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-72x72-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-60x60-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/apple-icon-57x57-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/favicon-32x32-seochecker-manifest-1924.png",
+      "success": false,
+      "error": {
+        "methodName": "constructor"
+      }
+    },
+    {
+      "filePath": "/favicon-16x16-seochecker-manifest-1924.png",
       "success": false,
       "error": {
         "methodName": "constructor"
