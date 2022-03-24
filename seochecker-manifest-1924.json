@@ -28,6 +28,21 @@
 			"sizes": "180x180"
 		},
 		{
+			"src": "/maskable_icon_x48.png",
+			"type": "image/png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "/maskable_icon_x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "/apple-icon-152x152-seochecker-manifest-1924.png",
+			"type": "image/png",
+			"sizes": "152x152"
+		},
+		{
 			"src": "/maskable_icon_x48-seochecker-manifest-1624",
 			"type": "image/png",
 			"sizes": "48x48"
