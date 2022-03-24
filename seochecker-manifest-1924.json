@@ -15,11 +15,6 @@
 			"type": "image/x-icon"
 		},
 		{
-			"src": "/images/apple-icon-512x512-seochecker-manifest-1524.png",
-			"type": "image/png",
-			"sizes": "512x512"
-		},
-		{
 			"src": "/images/android-icon-192x192-seochecker-manifest-1924.png",
 			"type": "image/png",
 			"sizes": "192x192"
@@ -63,16 +58,6 @@
 			"src": "images/apple-icon-152x152-seochecker-manifest-1924.png",
 			"type": "image/png",
 			"sizes": "152x152"
-		},
-		{
-			"src": "/maskable_icon_x48-seochecker-manifest-1624",
-			"type": "image/png",
-			"sizes": "48x48"
-		},
-		{
-			"src": "/maskable_icon_x512-seochecker-manifest-1624.png",
-			"type": "image/png",
-			"sizes": "512x512"
 		},
 		{
 			"src": "/apple-icon-152x152-seochecker-manifest-1924.png",
