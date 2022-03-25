@@ -13,7 +13,8 @@
 		{
 			"src": "https://metrowest.github.io/Service/images/1024.png",
 			"sizes": "1024x1024",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any"
 		},
 		{
 			"src": "/Service/images/1024.png",
