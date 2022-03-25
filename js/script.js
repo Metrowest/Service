@@ -3,14 +3,14 @@ let navbar = document.querySelector(".navbar");
 let searchBox = document.querySelector(".search-box .bx-search");
 // let searchBoxCancel = document.querySelector(".search-box .bx-x");
 
-//searchBox.addEventListener("click", ()=>{
-//  navbar.classList.toggle("showInput");
-//  if(navbar.classList.contains("showInput")){
-//    searchBox.classList.replace("bx-search" ,"bx-x");
-//  }else {
-//    searchBox.classList.replace("bx-x" ,"bx-search");
-//  }
-//});
+searchBox.addEventListener("click", () => {
+    navbar.classList.toggle("showInput");
+    if (navbar.classList.contains("showInput")) {
+        searchBox.classList.replace("bx-search", "bx-x");
+    } else {
+        searchBox.classList.replace("bx-x", "bx-search");
+    }
+});
 
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
@@ -40,15 +40,4 @@ jsArrow.onclick = function() {
 
 
 
-var activeSubMenu = document.querySelector('.submenu.is--dropdown.active');
 
-var openActiveSubMenu = function () {
-    if (!activeSubMenu.classList.contains('open')) {
-        activeSubMenu.classList.add('open');
-    }
-};
-
-if (activeSubMenu) {
-    openActiveSubMenu();
-    document.addEventListener('click', openActiveSubMenu, false);
-}
