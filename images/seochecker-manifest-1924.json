@@ -1,6 +1,6 @@
 {
-	"short_name": "Metrowest.Service",
-	"name": "Metrowest",
+	"short_name": "Metrowest",
+	"name": "Metrowest.Service",
 	"lang": "en",
 	"description": "Esta aplicación le proveerá algunas herramientas para predicar.",
 	"start_url": "https://metrowest.github.io/Service/",
@@ -10,6 +10,50 @@
 	"display": "standalone",
 	"orientation": "any",
 	"icons": [
+		{
+			"src": "/Service/images/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/android-chrome-maskable-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/images/android-chrome-maskable-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/images/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "https://metrowest.github.io/Service/images/android-chrome-maskable-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/images/android-chrome-maskable-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
 		{
 			"src": "images/icons/favicon.ico",
 			"type": "image/x-icon"
@@ -130,6 +174,10 @@
 			"platform": "wide",
 			"label": "List of Awesome Resources available in Awesome App"
 		}
+	],
+	"categories": [
+		"education"
+
 	],
 
 	"prefer_related_applications": false
