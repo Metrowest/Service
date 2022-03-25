@@ -166,24 +166,25 @@
 	],
 	"screenshots": [
 		{
-			"src": "/images/screenshot1.png",
-			"sizes": "1280x800",
-			"type": "image/png",
-			"platform": "wide",
-			"label": "Homescreen of Awesome App"
-		},
-		{
 			"src": "images/screenshot2.png",
 			"sizes": "750x1334",
 			"type": "image/webp",
 			"platform": "wide",
 			"label": "List of Awesome Resources available in Awesome App"
+		},
+		{
+			"src": "/images/screenshot-2.png",
+			"sizes": "1280x800",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/screenshot-3.png",
+			"sizes": "750x1334",
+			"type": "image/png"
 		}
 	],
 	"categories": [
 		"education"
-
 	],
-
 	"prefer_related_applications": false
 }
