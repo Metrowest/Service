@@ -175,6 +175,9 @@
 			"label": "List of Awesome Resources available in Awesome App"
 		}
 	],
+	"categories": [ "education"
+	
+	],
 
 	"prefer_related_applications": false
 }
