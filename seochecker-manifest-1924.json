@@ -168,7 +168,7 @@
 		{
 			"src": "/images/screenshot1.png",
 			"sizes": "1280x800",
-			"type": "image/webp",
+			"type": "image/png",
 			"platform": "wide",
 			"label": "Homescreen of Awesome App"
 		},
