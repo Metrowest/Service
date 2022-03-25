@@ -1,6 +1,6 @@
 {
-	"short_name": "Metrowest.Service",
-	"name": "Metrowest",
+	"short_name": "Metrowest",
+	"name": "Metrowest.Service",
 	"lang": "en",
 	"description": "Esta aplicación le proveerá algunas herramientas para predicar.",
 	"start_url": "https://metrowest.github.io/Service/",
@@ -175,8 +175,9 @@
 			"label": "List of Awesome Resources available in Awesome App"
 		}
 	],
-	"categories": [ "education"
-	
+	"categories": [
+		"education"
+
 	],
 
 	"prefer_related_applications": false
