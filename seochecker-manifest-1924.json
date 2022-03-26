@@ -59,7 +59,7 @@
 	],
 	"screenshots": [
 		{
-			"src": "screenshots/screenshot2.png",
+			"src": "/images/screenshots/screenshot2.png",
 			"sizes": "750x1334",
 			"type": "image/webp",
 			"platform": "wide",
