@@ -62,7 +62,7 @@
     {
       "src": "/images/screenshots/screenshot2.png",
       "sizes": "1280x800",
-      "type": "image/pnp",
+      "type": "image/pnp"
     },
     {
       "src": "/images/screenshots/screenshot2.png",
@@ -77,7 +77,7 @@
       "type": "image/png"
     },
     {
-      "src": "/images/screenshot-3.png",
+      "src": "/Service/images/screenshot-3.png",
       "sizes": "750x1334",
       "type": "image/png"
     }
