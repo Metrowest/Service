@@ -233,7 +233,7 @@ _gaq.push(['_setDomainName', 'jqueryscript.net']);
 _gaq.push(['_trackPageview']);
 
 var script_url =
-    "https://script.google.com/macros/s/AKfycbzLJkJtrXCcFk8FUrQeCVpdQ9X6-KQ8125MupNA9uCdoqLHxuTKZ20KYQGQUlwdHzk/exec"; /////////////////
+    "https://script.google.com/macros/s/AKfycbz_7zFBqlslQETEEmJItWFLoFPkMCUrkndsAcdzjTd9KicA7gm56j2OrfnA6MnmHGMb/exec"; /////////////////
 
 (function () {
     var ga = document.createElement('script');
