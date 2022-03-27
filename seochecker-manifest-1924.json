@@ -96,9 +96,24 @@
       "sizes": "512x512"
     },
     {
+      "src": "/Service/images/Square44x44Logo.scale-400.png",
+      "type": "image/png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "/Service/images/Square310x310Logo.scale-200.png",
+      "type": "image/png",
+      "sizes": "310x310"
+    },
+    {
       "src": "/Service/images/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "/Service/images/StoreLogo.scale-400.png",
+      "type": "image/png",
+      "sizes": "200x200"
     }
   ],
   "screenshots": [
