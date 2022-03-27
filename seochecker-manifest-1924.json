@@ -238,12 +238,7 @@
       "type": "image/png"
     },
     {
-      "src": "/Service/images/screenshot-2.png",
-      "sizes": "1280x800",
-      "type": "image/png"
-    },
-    {
-      "src": "/Service/images/screenshot-3.png",
+      "src": "/Service/images/s8.png",
       "sizes": "750x1334",
       "type": "image/png"
     }
