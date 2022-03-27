@@ -223,6 +223,11 @@
       "type": "image/png"
     },
     {
+      "src": "/Service/images/s5.png",
+      "sizes": "1350x1412",
+      "type": "image/png"
+    },
+    {
       "src": "/Service/images/screenshot-2.png",
       "sizes": "1280x800",
       "type": "image/png"
