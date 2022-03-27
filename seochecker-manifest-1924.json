@@ -67,7 +67,22 @@
       "purpose": "maskable"
     },
     {
-      "src": "/Service/images/icon/favicon.ico",
+      "src": "/Service/images/favicon-16x16-seochecker-manifest-1524.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/Service/images/favicon-32x32-seochecker-manifest-1524.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/Service/images/favicon-96x96-seochecker-manifest-1924.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/Service/images/favicon.ico",
       "type": "image/x-icon"
     },
     {
