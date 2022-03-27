@@ -111,6 +111,21 @@
       "sizes": "512x512"
     },
     {
+      "src": "/Service/images/BadgeLogo.scale-125.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/Service/images/BadgeLogo.scale-150.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/Service/images/BadgeLogo.scale-200.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
       "src": "/Service/images/StoreLogo.scale-400.png",
       "type": "image/png",
       "sizes": "200x200"
