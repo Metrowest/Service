@@ -218,6 +218,11 @@
       "type": "image/png"
     },
     {
+      "src": "/Service/images/s4.png",
+      "sizes": "720x1046",
+      "type": "image/png"
+    },
+    {
       "src": "/Service/images/screenshot-2.png",
       "sizes": "1280x800",
       "type": "image/png"
