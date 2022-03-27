@@ -204,17 +204,17 @@
   "screenshots": [
     {
       "src": "/Service/images/s1.png",
-      "sizes": "1280x800",
+      "sizes": "500x348",
       "type": "image/png"
     },
     {
       "src": "/Service/images/s2.png",
-      "sizes": "1280x800",
+      "sizes": "280x498",
       "type": "image/png"
     },
     {
       "src": "/Service/images/s3.png",
-      "sizes": "1280x800",
+      "sizes": "1350x1639",
       "type": "image/png"
     },
     {
