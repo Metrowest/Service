@@ -83,7 +83,8 @@
     },
     {
       "src": "/Service/images/favicon.ico",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "sizes": "16x16"
     },
     {
       "src": "/Service/images/maskable_icon_x48.png",
