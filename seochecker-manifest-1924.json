@@ -117,6 +117,11 @@
       "sizes": "48x48"
     },
     {
+      "src": "/Service/images/ms-icon-70x70.png",
+      "type": "image/png",
+      "sizes": "70x70"
+    },
+    {
       "src": "/Service/images/msapplication-icon-144x144.png",
       "type": "image/png",
       "sizes": "144x144"
@@ -125,6 +130,11 @@
       "src": "/Service/images/mstile-150x150.png",
       "type": "image/png",
       "sizes": "150x150"
+    },
+    {
+      "src": "/Service/images/ms-icon-310x310.png",
+      "type": "image/png",
+      "sizes": "310x310"
     },
     {
       "src": "/Service/images/icon-foreground.png",
