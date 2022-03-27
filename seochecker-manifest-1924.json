@@ -101,6 +101,16 @@
       "sizes": "150x150"
     },
     {
+      "src": "/Service/images/icon-foreground.png",
+      "type": "image/png",
+      "sizes": "864x864"
+    },
+    {
+      "src": "/Service/images/splash.png",
+      "type": "image/png",
+      "sizes": "2732x2732"
+    },
+    {
       "src": "/Service/images/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
