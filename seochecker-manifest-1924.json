@@ -106,6 +106,16 @@
       "sizes": "310x310"
     },
     {
+      "src": "/Service/images/Wide310x150Logo.scale-100.png",
+      "type": "image/png",
+      "sizes": "310x150"
+    },
+    {
+      "src": "/Service/images/Wide310x150Logo.scale-150.png",
+      "type": "image/png",
+      "sizes": "465x225"
+    },
+    {
       "src": "/Service/images/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
@@ -113,17 +123,17 @@
     {
       "src": "/Service/images/BadgeLogo.scale-125.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "30x30"
     },
     {
       "src": "/Service/images/BadgeLogo.scale-150.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "36x36"
     },
     {
       "src": "/Service/images/BadgeLogo.scale-200.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "48x48"
     },
     {
       "src": "/Service/images/StoreLogo.scale-400.png",
