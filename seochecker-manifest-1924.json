@@ -111,6 +111,11 @@
       "sizes": "2732x2732"
     },
     {
+      "src": "/Service/images/icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
       "src": "/Service/images/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
