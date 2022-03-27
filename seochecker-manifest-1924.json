@@ -208,6 +208,11 @@
       "type": "image/png"
     },
     {
+      "src": "/Service/images/s2.png",
+      "sizes": "750x1334",
+      "type": "image/png"
+    },
+    {
       "src": "/Service/images/s3.png",
       "sizes": "1350x1639",
       "type": "image/png"
