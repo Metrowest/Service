@@ -1,47 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
-*
-
-
-
-.container .form {
-    width: 100%;
+* .container .form {
+    width: 100%
 }
 
 .container .form .inputfield {
     margin-bottom: 15px;
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
     .container .form .inputfield label {
         width: 200px;
         color: #757575;
         margin-right: 10px;
-        font-size: 20px;
+        font-size: 20px
     }
 
-    .container .form .inputfield .input,
-    .container .form .inputfield .textarea {
-        outline: none;
+    .container .form .inputfield .input, .container .form .inputfield .textarea {
+        outline: 0;
         order: 3px solid #00eaf2;
         font-size: 20px;
         padding: 8px 10px;
         border-radius: 3px;
-        transition: all 0.3s ease;
+        transition: all .3s ease;
         width: 95%
     }
 
     .container .form .inputfield .textarea {
         width: 100%;
         height: 60px;
-        resize: none;
+        resize: none
     }
 
     .container .form .inputfield .custom_select {
         position: relative;
         width: 100%;
-        height: 37px;
+        height: 37px
     }
 
         .container .form .inputfield .custom_select:before {
@@ -51,33 +46,30 @@
             right: 10px;
             border: 8px solid;
             border-color: #d5dbd9 transparent transparent transparent;
-            pointer-events: none;
+            pointer-events: none
         }
 
         .container .form .inputfield .custom_select select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            outline: none;
+            outline: 0;
             width: 100%;
             height: 100%;
-            border: 0px;
+            border: 0;
             padding: 8px 10px;
             font-size: 15px;
             border: 1px solid #d5dbd9;
-            border-radius: 3px;
+            border-radius: 3px
         }
 
-
-            .container .form .inputfield .input:focus,
-            .container .form .inputfield .textarea:focus,
-            .container .form .inputfield .custom_select select:focus {
-                border: 1px solid #fec107;
+            .container .form .inputfield .custom_select select:focus, .container .form .inputfield .input:focus, .container .form .inputfield .textarea:focus {
+                border: 1px solid #fec107
             }
 
     .container .form .inputfield p {
         font-size: 14px;
-        color: #757575;
+        color: #757575
     }
 
     .container .form .inputfield .check {
@@ -85,14 +77,14 @@
         height: 15px;
         position: relative;
         display: block;
-        cursor: pointer;
+        cursor: pointer
     }
 
-        .container .form .inputfield .check input[type="checkbox"] {
+        .container .form .inputfield .check input[type=checkbox] {
             position: absolute;
             top: 0;
             left: 0;
-            opacity: 0;
+            opacity: 0
         }
 
         .container .form .inputfield .check .checkmark {
@@ -100,7 +92,7 @@
             height: 15px;
             border: 1px solid #fec107;
             display: block;
-            position: relative;
+            position: relative
         }
 
             .container .form .inputfield .check .checkmark:before {
@@ -113,82 +105,80 @@
                 border: 2px solid;
                 border-color: transparent transparent #fff #fff;
                 transform: rotate(-45deg);
-                display: none;
+                display: none
             }
 
-        .container .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark {
-            background: #0002c7;
+        .container .form .inputfield .check input[type=checkbox]:checked ~ .checkmark {
+            background: #0002c7
         }
 
-.content0 .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before {
-    display: block;
+.content0 .form .inputfield .check input[type=checkbox]:checked ~ .checkmark:before {
+    display: block
 }
 
 .container .form .inputfield .btn {
     width: 100%;
     padding: 8px 10px;
     font-size: 15px;
-    border: 0px;
+    border: 0;
     background: #002903;
     color: #fff;
     cursor: pointer;
     border-radius: 3px;
-    outline: none;
+    outline: 0
 }
 
     .container .form .inputfield .btn:hover {
-        background: #0002c7;
+        background: #0002c7
     }
 
 .container .form .inputfield:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 @media (max-width:420px) {
     .container .form .inputfield {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start
     }
 
         .container .form .inputfield label {
-            margin-bottom: 5px;
+            margin-bottom: 5px
         }
 
         .container .form .inputfield.terms {
-            flex-direction: row;
+            flex-direction: row
         }
 }
 
 #draw-canvas {
-    border: 2px dotted #CCCCCC;
+    border: 2px dotted #ccc;
     border-radius: 5px;
-    cursor: crosshair;
+    cursor: crosshair
 }
 
 #draw-dataUrl {
-    width: 100%;
+    width: 100%
 }
 
 h3 {
-    margin: 10px 15px;
+    margin: 10px 15px
 }
 
 h1 {
-    margin: 10px 15px;
+    margin: 10px 15px
 }
 
-
-
 section {
-    flex: 1;
+    flex: 1
 }
 
 input {
-    margin: 5px;
+    margin: 5px
 }
 
 .button:active {
-    transform: scale(0.9);
+    transform: scale(.9)
 }
 
 .contenedor {
@@ -196,7 +186,7 @@ input {
     margin: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .instrucciones {
@@ -205,23 +195,23 @@ input {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 label {
-    margin: 0 15px;
+    margin: 0 15px
 }
 
 footer {
     background: #20272c;
-    color: white;
+    color: #fff;
     height: 100%;
     width: 100%;
     margin-top: 10px;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 table#myTable {
@@ -229,64 +219,68 @@ table#myTable {
     min-width: 300px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    display: inline-block;
+    display: inline-block
 }
 
 tr {
-    background-color: #12629a;
+    background-color: #12629a
 }
 
-table, th, td {
+table, td, th {
     margin: 10px 0;
     border: solid 1px #919191;
     font: 15px Verdana;
     padding: 2px 4px;
-    font: 18px Verdana;
+    font: 18px Verdana
 }
 
+    table, td.#observaciones, th {
+        margin: 10px 0;
+        border: solid 1px #919191;
+        font: 15px Verdana;
+        padding: 2px 4px;
+        font: 18px Verdana;
+        width: 200px
+    }
+
 th {
-    font-weight: bold;
+    font-weight: 700
 }
 
 .louder-area {
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 #loader {
     border: 16px solid #f7ff32;
     border-radius: 50%;
-    border-top: 16px solid blue;
+    border-top: 16px solid #00f;
     border-bottom: 16px solid green;
     width: 70px;
     height: 70px;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;
     visibility: hidden;
-    margin:auto;
-    margin:auto;
+    margin: auto;
+    margin: auto
 }
-
 
 @-webkit-keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0)
     }
 
     100% {
-        -webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
     }
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(0)
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(360deg)
     }
 }
-
-
-
-
