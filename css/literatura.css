@@ -1,6 +1,4 @@
-*
-
-.content0 {
+* .content0 {
     max-width: 900px
 }
 
@@ -135,12 +133,12 @@
     padding: 10px
 }
 
-    .formulario__submit:hover {
-        background-color: #410101;
-        box-shadow: 0 2px 0 #720101;
-        box-shadow: 0 6px 0 #0e1a18;
-        background: linear-gradient(-135deg,#c50c0c,#c50c0c)
-    }
+.formulario__submit:hover {
+    background-color: #410101;
+    box-shadow: 0 2px 0 #720101;
+    box-shadow: 0 6px 0 #0e1a18;
+    background: linear-gradient(-135deg,#c50c0c,#c50c0c)
+}
 
 #respuesta.fail {
     color: red
@@ -237,9 +235,9 @@
     border-bottom: 1px solid #000
 }
 
-    .cart-row:last-child .cart-column {
-        border: none
-    }
+.cart-row:last-child .cart-column {
+    border: none
+}
 
 .cart-total {
     text-align: end;
