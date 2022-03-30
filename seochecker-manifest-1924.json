@@ -4,7 +4,7 @@
   "lang": "en",
   "description": "Esta aplicación le proveerá algunas herramientas para predicar.",
   "start_url": "https://metrowest.github.io/Service/",
-  "background_color": "#aec1ff",
+  "background_color": "#5a92b96e",
   "theme_color": "#04416c",
   "dir": "ltr",
   "display": "standalone",
