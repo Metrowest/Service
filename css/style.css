@@ -437,12 +437,12 @@ h3 {
     margin-top: 20px
 }
 
-    .section-header5:hover, .section-header:hover {
-        background-color: #410101;
-        box-shadow: 0 2px 0 #720101;
-        box-shadow: 0 6px 0 #0e1a18;
-        background: linear-gradient(-135deg,#005691,#c3d6f8)
-    }
+.section-header5:hover, .section-header:hover {
+    background-color: #410101;
+    box-shadow: 0 2px 0 #720101;
+    box-shadow: 0 6px 0 #0e1a18;
+    background: linear-gradient(-135deg,#005691,#c3d6f8)
+}
 
 .img1 {
     height: 60px;
