@@ -218,7 +218,6 @@ nav .navbar .links li:hover .js-sub-menu {
     left: -100%;
     display: block;
     max-width: 250px;
-
     background:  #3E8DA8;
     line-height: 40px;
     padding: 20px;
@@ -534,7 +533,7 @@ h2#section-header10 {
 }
 
 .imgLogo4 {
-    width: 175px;
+    width: 150px;
     height: 350px;
     object-fit: cover;
     object-position: bottom;
