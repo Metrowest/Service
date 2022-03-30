@@ -1,6 +1,26 @@
 {
   "results": [
     {
+      "filePath": "images/36x36.png",
+      "success": true
+    },
+    {
+      "filePath": "images/48x48.png",
+      "success": true
+    },
+    {
+      "filePath": "images/72x72.png",
+      "success": true
+    },
+    {
+      "filePath": "images/96x96.png",
+      "success": true
+    },
+    {
+      "filePath": "images/144x144.png",
+      "success": true
+    },
+    {
       "filePath": "images/192x192.png",
       "success": true
     },
@@ -64,11 +84,19 @@
       "success": true
     },
     {
+      "filePath": "images/70x70.png",
+      "success": true
+    },
+    {
       "filePath": "images/144x144.png",
       "success": true
     },
     {
       "filePath": "images/150x150.png",
+      "success": true
+    },
+    {
+      "filePath": "images/310x310.png",
       "success": true
     },
     {
@@ -113,6 +141,34 @@
     },
     {
       "filePath": "images/512x512.png",
+      "success": true
+    },
+    {
+      "filePath": "images/194x194.png",
+      "success": true
+    },
+    {
+      "filePath": "images/96x96.png",
+      "success": true
+    },
+    {
+      "filePath": "images/57x57.png",
+      "success": true
+    },
+    {
+      "filePath": "images/72x72.png",
+      "success": true
+    },
+    {
+      "filePath": "images/114x114.png",
+      "success": true
+    },
+    {
+      "filePath": "images/144x144.png",
+      "success": true
+    },
+    {
+      "filePath": "images/180x180.png",
       "success": true
     },
     {
@@ -203,13 +259,6 @@
   "errors": [
     {
       "filePath": "/Service/images/favicon.ico",
-      "success": false,
-      "error": {
-        "methodName": "constructor"
-      }
-    },
-    {
-      "filePath": "/Service/images/screenshot-3.png",
       "success": false,
       "error": {
         "methodName": "constructor"
