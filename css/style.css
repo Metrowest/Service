@@ -366,8 +366,9 @@ body {
 }
 
 p {
-    font-size: 20px;
-    margin-top: 25px
+  font-size: 20px;
+  margin-top: 25px;
+  text-align: center;
 }
 
 h2 {
