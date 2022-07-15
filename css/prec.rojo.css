@@ -4,17 +4,15 @@
 }
 
 .form-check-label {
-    font-size: 20px
-}
-#exampleFormControlTextarea1-label {
-    font-size: 20px
+    font-size: 25px
 }
 
 .form-check-input {
     font-size: 24px;
     margin-left: 10px;
     background-color: #95fefe;
-    border-radius: 5px
+    border-radius: 5px;
+    margin-top: 20px;
 }
 #Observaciones {
     font-size: 24px;
