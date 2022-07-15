@@ -48,14 +48,12 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-
     <script src="pwabuilder-sw.js"></script>
     <script type="module">
         import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
         const el = document.createElement('pwa-update');
         document.body.appendChild(el);
     </script>
-
 
 </head>
 
@@ -175,17 +173,16 @@
 
         <section class="container">
             <h2 class="section-header" id="section-header11">
-                <i><img class="img4" src="images/img/c18.png"></i>PERSONA QUE MOSTRÓ<i>
+                <i><img class="img4" src="images/img/c18.png"></i>PERSONA QUE MOSTRÓ INTERÉS<i>
                     <img class="img4" src="images/img/c22.png">
                 </i>
             </h2>
-            <img src="images/img/c28.png" class="imgLogo" />
+            <img src="images/img/c28.1.png" class="imgLogo" />
+            <div class="formulario__parrafo">
+                <br>
+                <h2>Datos de la persona interesada</h2>
+            </div>
             <div class="content2">
-
-                <div class="inputs">
-                    <input type="date" name="Fecha" id="Fecha" required>
-                    <label>Fecha</label>
-                </div>
                 <div class="inputs">
                     <input type="text" name="Nombre" id="Nombre" required>
                     <label>Nombre y Apellido</label>
@@ -204,14 +201,10 @@
 
             <div class="content2">
                 <div class="inputs">
-                    <input type="text" name="Direccion1" id="Direccion1" required>
-                    <label>Dirección 1</label>
+                    <input type="text" name="Direccion" id="Direccion">
+                    <label>Dirección (opcional):</label>
                 </div>
 
-                <div class="inputs">
-                    <input type="text" name="Ciudad" id="Ciudad" required>
-                    <label>Ciudad y zona postal</label>
-                </div>
                 <div class="inputs">
                     <input type="text" name="Telefono" id="Telefono" required>
                     <label>Teléfono</label>
@@ -219,25 +212,26 @@
                 <div class="inputs">
                     <input type="text" name="Idioma" id="Idioma" required>
                     <label>Idimoa</label>
-                </div>
-                <div class="inputs">
-                    <input type="text" name="Correo electronico" id="Correo" required>
-                    <label>Correo electronico</label>
-                </div>
-
-                <div class="formulario__parrafo">
-                    <p>Mejor momento para contactar (opcional):</p>
-                </div>
-                <div class="inputs">
-                    <input type="text" name="Mejor momento para contactar" id="Mejor">
                 </div><br>
                 <div class="inputs">
-                    <input type="text" name="Entregado" id="Entregado" required>
-                    <label>Entregado por (Nombre)</label>
+                    <input type="text" name="Correo electronico" id="Correo" >
+                    <label>Correo electronico (opcional):</label>
+                </div><br>
+                <div class="inputs">
+                    <input type="text" name="Mejor momento para contactar" id="Mejor">
+                    <label>Mejor momento para contactar (opcional):</label>
+                </div>
+                <div class="formulario__parrafo">
+                    <br>
+                    <h2>Datos del publicador</h2>
                 </div>
                 <div class="inputs">
-                    <input type="text" name="Observaciones1" id="Observaciones1" required>
-                    <label>Observaciones</label>
+                    <input type="text" name="Publicador" id="Publicador" required>
+                    <label>Nombre y apellido</label>
+                </div><br>
+                <div class="inputs">
+                    <input type="text" name="Observaciones" id="Observaciones">
+                    <label>Observaciones (opcional):</label>
                 </div>
             </div>
 
@@ -269,8 +263,9 @@
             <div id="respuesta"></div>
             <button id="submit" class="formulario__submit">Confirme en WhatsApp</button>
             </div>
-            <div class="content2">
-                <p>Gracias por aprovechar este medio digital de comunicación.</p>
+            <div class="formulario__parrafo">
+                <br>
+                <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
             </div>
             </div>
         </section>
