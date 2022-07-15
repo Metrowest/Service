@@ -9,7 +9,6 @@
   
   let Fecha = document.querySelector("#Fecha").value;
   let Nombre = document.querySelector("#Nombre").value;
-  let Apellido = document.querySelector("#Apellido").value;
   let Sexo = document.querySelector("#Sexo").value;
   let Direccion1 = document.querySelector("#Direccion1").value;
   let Ciudad = document.querySelector("#Ciudad").value; 
@@ -30,8 +29,6 @@
   ${Fecha}%0A
   Nombre%0A
   ${Nombre}%0A
-  Apellido%0A
-  ${Apellido}%0A
   Sexo%0A
   ${Sexo}%0A
   Direccion1%0A
@@ -51,7 +48,7 @@
   Observaciones1%0A
   ${Observaciones1}`;
 
-  if (Fecha === "" || Nombre === "" || Apellido === "" ) {
+  if (Fecha === "" || Nombre === "" || Idioma === "" ) {
     resp.classList.add("fail");
     resp.innerHTML = `Faltan algunos datos, ${Nombre}`;
     return false;
