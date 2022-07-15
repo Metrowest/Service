@@ -63,6 +63,14 @@
     color: #000
 }
 
+.flechasAzul {
+    background-color: #95fefe;
+    font-size: 24px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #000
+}
+
 .content2 .inputs {
     height: 40px;
     width: auto;
