@@ -14,14 +14,14 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
 
   <!-- Facebook metadata -->
-  <meta property="og:image:width" content="279">
-  <meta property="og:image:height" content="279">
+  <meta property="og:image:width" content="192">
+  <meta property="og:image:height" content="192">
   <meta property="og:description"
-    content="Esta aplicacion le presenta el plan de emergencias y algunas herramientas para el servicio.">
+    content="Esta aplicaci&oacute;n le proveer&aacute; el plan de emergencias y algunas herramientas para el servicio.">
   <meta property="og:title" content="Metrowest Service">
   <meta property="og:image"
-    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
-  <meta property="og:url" content="https://metrowest.github.io/Service/">
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons2/android-chrome-192x192.png?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/desastre.html">
 
   <!-- Boxicons CDN Link Nav var pequwno-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -32,16 +32,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
-  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-
-  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico" sizes="16x16" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="public/manifest.json" />
@@ -58,6 +54,8 @@
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
   <!-- required -->
+
+  <script type="module" href="/src/app-index.ts"></script>
 
   <!--SW-->
   <script>
@@ -77,6 +75,7 @@
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
 
   <!-- .stellarnav -->
   <div class="stellarnav">
@@ -143,8 +142,7 @@
       </li>
       <li><a href="tareas.html"><i><img title="visita" class="img6" src="public/assets/img/tareas2.webp"></i>Tareas</a>
       </li>
-      <li><a href="iniciar.html"><i><img title="visita" class="img6" src="public/assets/img/a&m.webp"></i>Iniciar
-          Sección</a>
+      <li><a href="iniciar.html"><i><img title="visita" class="img6" src="public/assets/img/a&m.webp"></i>Iniciar Sección</a>
       </li>
     </ul>
   </div>
@@ -164,133 +162,27 @@
   <!--body original-->
   <section class="container">
     <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>METROWEST SERVICE<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
-    <div class="containera">
-      <img title="logolarge" src="public/assets/img/precursor4.webp" class="imgLogo2" />
-      <h3>“Haz la obra de evangelizador, efectúa tu ministerio plenamente.”<a
-          href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/4#v=55:4:5" target="_blank">(2 TIM. 4:5)</a>.
-      </h3>
-    </div>
-
-    <div class="content1">
-      <p>
-        Metrowest Service no sustituye el sitio oficial de la Organización
-        Cristiana de los Testigos de Jehová, jw.org ni la aplicación JW Library.
-        Tampoco sustituye la aplicación NW JWS, que se utiliza para enviar los informes y publicar los anuncios,
-        eventos,
-        programas de las reuniones de la congregación.
-      </p>
-      <p>
-        Este sitio se ha preparado con la intención de facilitar a los hermanos de la congregación Metrowest Spanish
-        las siguientes herramientas:<br><br>
-      </p>
-      <div class="content3">
-        1. <a href="desastre.html"><i><img title="tormenta1" class="img6" src="public/assets/img/tormenta1.webp">
-          </i></a>
-        <p-5>
-          Plan de emergencia: plan ante una emergencia natural, incluye:
-        </p-5>
-      </div>
-      <p-5>
-        • Responsabilidades<br>
-      </p-5>
-      <p-5>
-        • Plan aprobado por el cuerpo<br>
-      </p-5>
-      <p-5>
-        • Vigilancia ante huracán<br>
-      </p-5>
-      <p-5>
-        • Aviso de huracán<br>
-      </p-5>
-      <p-5>
-        • Después del huracán<br>
-      </p-5>
-      <p-5>
-        • Pasos por seguir <br>
-      </p-5>
-      <p-5>
-        • Textos para el pastoreo<br>
-      </p-5>
-      <p-5>
-        • Preparación<br><br>
-      </p-5>
-      <div class="content3">
-        2. <a href="territorios.html"><i><img title="territorio1" class="img6" src="public/assets/img/territorio1.webp">
-          </i></a>
-        <p-5>
-          Territorios: acceso directo a los territorios para el servicio (requiere autorización).<br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        3. <a href="interes.html"><i><img title="precursor1" class="img6" src="public/assets/img/precursor1.webp">
-          </i></a>
-        <p-5>
-          Interesados: forma para informar personas que muestren interés y hablen otro idioma o no sean
-          de nuestro territorio.<br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        4. <a href="precursorado.html"><i><img title="precursor" class="img6" src="public/assets/img/precursor.webp">
-          </i></a>
-        <p-5>
-          Precursorado auxiliar: forma para solicitar el precursorado auxiliar. <br><br>
-        </p-5>
-      </div>
-      <P1 id="condiciones"></P1>
-      <div class="content3">
-        5. <a href="recursos.html"><i><img title="recurso" class="img6" src="public/assets/img/recurso.webp">
-          </i></a>
-        <p-5>
-          Recursos: instrucciones y dirección para utilizar algunas de las funciones y herramientas incluye imágenes y
-          videos). <br><br>
-        </p-5>
-      </div>
-    </div>
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>CONDICIONES DE USO<i>
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>LIMITES DEL TERRITORIO<i>
         <img title="header2" class="img4" src="public/assets/img/header2.webp">
       </i>
     </h2>
 
-    <img title="condiciones" src="public/assets/img/condiciones.webp" class="imgLogo" />
+    <img title="mapalarge" src="public/assets/img/territorio3.webp" class="imagemapalarge" />
 
-    <div class="content1">
-      <h3>El uso de este Web App está regido por las presentes condiciones.</h3>
-      <p>
-        Al usar este sitio, usted se compromete a cumplir todas estas condiciones establecidas en este
-        formato digital.<br>
-        <br> No debe utilizar este sitio si no está dispuesto a cumplir estas condiciones en su totalidad o
-        en parte.<br>
-        <br> El enlace e información contenida es para uso único y exclusivo de los miembros de la
-        congregación Metrowest.<br>
-        <br>La información contenida no se debe postear en las redes sociales ni adelantar a menos que
-        tengan permiso del Cuerpo de Ancianos.
-      </p>
 
-      <h3>Lo siguiente está prohibido: </h3>
-      <p>
-        Publicar material gráfico, publicaciones electrónicas, artículos de este medio digital de anuncios en
-        cualquier sitio web, sitio de intercambio de archivos, sitio de intercambio de vídeo o red social.
-        <br>
-      </p>
-    </div>
-
-    <div class="containera">
-      <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3>
-      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
-    </div>
     <div class="formulario__parrafo">
       <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
     </div>
-
     <div class="button">
       <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>
   </section>
+  <!-- Memanggil scripts-->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script type="text/javascript"></script>
 
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -307,11 +199,6 @@
   <!-- required stellarnav-->
 
   <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
-
-  <!-- Memanggil scripts-->
-  <script type="text/javascript"></script>
-
-
 
 </body>
 
