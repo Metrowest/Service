@@ -14,14 +14,14 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
 
   <!-- Facebook metadata -->
-  <meta property="og:image:width" content="192">
-  <meta property="og:image:height" content="192">
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
   <meta property="og:description"
-    content="Esta aplicaci&oacute;n le proveer&aacute; el plan de emergencias y algunas herramientas para el servicio.">
+    content="Esta aplicacion le presenta el plan de emergencias y algunas herramientas para el servicio.">
   <meta property="og:title" content="Metrowest Service">
   <meta property="og:image"
-    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons2/android-chrome-192x192.png?raw=true/og-image.jpg">
-  <meta property="og:url" content="https://metrowest.github.io/Service/desastre.html">
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/">
 
   <!-- Boxicons CDN Link Nav var pequwno-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -32,12 +32,16 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
-  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico" sizes="16x16" />
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="public/manifest.json" />
@@ -53,9 +57,8 @@
   <!-- required -->
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/countdown.css">
   <!-- required -->
-
-  <script type="module" href="/src/app-index.ts"></script>
 
   <!--SW-->
   <script>
@@ -75,7 +78,6 @@
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
-  <app-index></app-index>
 
   <!-- .stellarnav -->
   <div class="stellarnav">
@@ -177,39 +179,79 @@
 
   <!-- .stellarnav header-->
   <div class="header">
-    <a href="#">Metrowest Service </a>
-    <h1>Trabajando Unidos Como Congregación</h1>
-    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
-    <h3> Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
-      sostenerle las manos (Éxodo 17:12).<br>
+    <a href="#">¡PRONTO!</a>
+    <h1>Noviembre de 2023</h1>
+    <img title="logolarge" src="public/assets/img/precursor4.webp" class="imgLogo2" />
+    <h3> “Nada me da más alegría que oír que mis hijos siguen andando en la verdad” (3 Juan 4).<br>
     </h3>
   </div>
   <!-- .stellarnav header-->
 
   <!--body original-->
   <section class="container">
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>LIMITES DEL TERRITORIO<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
+    <div class="content1">
+      <div class="overlay"></div>
+      <div class="wrapper">
+        <div class="">
+          <h1 class="title1"><span>¡PRONTO!</span> Noviembre de 2023</h1>
+          <div class="countdown-container">
+            <div>
+              <p id="days" class="big-text">0</p>
+              <span>Days</span>
+            </div>
+            <div>
+              <p id="hours" class="big-text">0</p>
+              <span>Hours</span>
+            </div>
+            <div>
+              <p id="min" class="big-text">0</p>
+              <span>Min</span>
+            </div>
+            <div>
+              <p id="sec" class="big-text">0</p>
+              <span>Sec</span>
+            </div>
+          </div>
+          <div class="containera">
+            <h1 class="title1">Campaña mundial</h1>
+            <h1 class="sub-title1">¡Una excelente oportunidad para ampliar nuestro servicio a Jehová¡
+            </h1><br><br>
+            <h1 class="sub-title1">
+              ¡Hagamos planes con la familia¡ Sirvamos juntos como precursores auxiliares.
+              Con solo 15 o 30 horas podemos completar el requisito de horas.
+            </h1><br><br>
+            <img title="logolarge" src="public/assets/img/familia2.webp" class="imgLogo2" />
+            <h1 class="sub-title1">
+              “Nada me da más alegría que oír que mis hijos siguen andando en la verdad” (3 Juan 4)
+            </h1>
+            <!--<P2>***Puede compartir la invitación en formato digital<a
+                href="https://www.jw.org/finder?wtlocale=S&docid=1011268&srcid=share" target="_blank">
+                aqui </a>o presione el botón para descargarla e imprimirla.***
+            </P2><br><br>
+            <div class="buttons-area">
+              <button type="submit" id="submit" class="formulario__submit"
+                onclick="window.location.href =
+            'https://www.jw.org/download/?output=html&pub=mi23&fileformat=PDF&alllangs=0&langwritten=S&txtCMSLang=S&isBible=0';">
+                ¡Descargue la <br>invitación aqui!
+              </button>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <img title="mapalarge" src="public/assets/img/territorio3.webp" class="imagemapalarge" />
-
-
+    <div class="containera">
+      <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3>
+      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+    </div>
     <div class="formulario__parrafo">
       <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
     </div>
+
     <div class="button">
       <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>
   </section>
-  <!-- Memanggil scripts-->
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  <script type="text/javascript"></script>
 
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -226,6 +268,11 @@
   <!-- required stellarnav-->
 
   <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+  <!-- Memanggil scripts-->
+  <script type="text/javascript"></script>
+  <script src="public/campana.js"></script>
+
 
 </body>
 
