@@ -46,6 +46,9 @@
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="public/manifest.json" />
 
+  <!--Popup Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 
   <!-- light mode and dark mode CSS -->
   <link rel="stylesheet" media="(prefers-color-scheme:light)"
@@ -57,6 +60,7 @@
   <!-- required -->
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/pupupprec.css">
   <!-- required -->
 
   <!--SW-->
@@ -206,7 +210,25 @@
           href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/4#v=55:4:5" target="_blank">(2 TIM. 4:5)</a>.
       </h3>
     </div>
-
+    <div class="popup">
+      <button id="close">&times;</button>
+      <h2>¡Auxiliar con 15 o 30 horas!</h2><br>
+      <h4>
+        Una excelente oportunidad para ampliar nuestro servicio a Jehová.
+      </h4>
+      <p>
+        ¡Hagamos planes con la familia¡ “Nada me da más alegría que oír que mis hijos siguen andando en la verdad”
+        <a id="a3" href="https://wol.jw.org/es/wol/l/r4/lp-s?q=3+Juan+4" target="_blank">(3 Juan 4)
+        </a>.
+      </p>
+      <p>
+        Sirvamos juntos como precursores auxiliares.
+        Con solo 15 o 30 horas podemos completar el requisito de horas.
+      </p>
+      <div class="button" id="popup button">
+        <a href="precursorado.html" id="a1">Aplique ahora</a>
+      </div>
+    </div>
     <div class="content1">
       <p>
         Metrowest Service no sustituye el sitio oficial de la Organización
@@ -275,7 +297,7 @@
       <P1 id="condiciones"></P1>
       <div class="content3">
         5. <i><img title="recurso" class="img6" src="public/assets/img/familia4.webp">
-          </i>
+        </i>
         <p-5>
           Eventos: incluye fechas de campañas, asambleas, la conmemoración etc...<br><br>
         </p-5>
@@ -290,7 +312,7 @@
       </div>
       <div class="content3">
         7. <i><img title="recurso" class="img6" src="public/assets/img/a&m.webp">
-          </i>
+        </i>
         <p-5>
           Nombrados: el acceso a esta sección se ha limitado solo para los ancianos y
           siervos ministeriales (requiere autorización).<br><br>
@@ -338,6 +360,21 @@
       <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>
   </section>
+
+  <!--Script-->
+  <script type="text/javascript">
+    window.addEventListener("load", function () {
+      setTimeout(
+        function open(event) {
+          document.querySelector(".popup").style.display = "block";
+        },
+        2000
+      )
+    });
+    document.querySelector("#close").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "none";
+    });
+  </script>
 
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
