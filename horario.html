@@ -78,7 +78,7 @@
 
     <!--my body-->
     <section class="containerh">
-      <button id="a2" type="button" onclick="javascript:window.print()">
+      <button id="a2" href="javascript:void(0);" onclick="printFunction()">
         <img title="territorio1" class="g3" src="public/assets/img/print.png">imprimir
       </button>
       <h2>
@@ -475,14 +475,13 @@
       <!-- Top arow button on body -->
     </section>
   </div>
-  <!--desastre-->
+  <!--horario dropdown-->
   <script src="public/minimenu.js"></script>
+
+  <!--horario print-->
   <script>
-    function printPageArea(elementID) {
-      var printContent = document.getElementById(elementID).innerHTML;
-      var originalContent = document.body.innerHTML;
+    function printFunction() {
       window.print();
-      document.body.innerHTML = originalContent;
     }
   </script>
 
