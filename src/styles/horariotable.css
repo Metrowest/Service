@@ -20,8 +20,8 @@ td {
   color: white;
   margin: 10px 0;
   border: solid 1px #fff;
-  min-width: 100px;
-  max-width: 50px;
+  min-width: 50px;
+  max-width: 65px;
   text-align: center;
 }
 
@@ -138,3 +138,10 @@ td {
     border-bottom: 2px solid #000000;
     height: 30px;
   }
+
+  @media screen {
+    p {color: blue;}
+}
+@media print {
+    p {color: black;}
+ }
