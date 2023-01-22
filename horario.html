@@ -82,7 +82,7 @@
         <img title="territorio1" class="g3" src="public/assets/img/print.png">imprimir
       </button>
       <h2>
-        HORARIO PARA EL PRECURSORADO
+        HORARIO PARA<br>EL PRECURSORADO
       </h2>
       <button id="a2" onclick="window.location.href = 'precursorado.html';">
         <img title="horario" class="g3" src="public/assets/img/precursor4.webp">Regresar
@@ -92,12 +92,13 @@
 
           <thead class="bg-dark text-light">
             <tr>
-              <th>                <a class="buttong" href="#popup1">Instrucciones</a></th>
-              <th>7am calles</th>
-              <th>9:30am<br>salón del reino</th>
-              <th>6:30am<br>Por zooms</th>
-              <th>6:30am<br>salón del reino</th>
-              <th>1pm<br>salón del reino</th>
+              <th> <a class="buttong" href="#popup1">Ayuda</a></th>
+              <th>7am<br>calles</th>
+              <th>9:30am<br>salón</th>
+              <th>9:30am<br>zoom</th>
+              <th>6:30pm<br>zooms</th>
+              <th>6:30pm<br>salón</th>
+              <th>1pm<br>salón</th>
             </tr>
           </thead>
 
@@ -136,7 +137,9 @@
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am zoom">
+              <td data-title="9:30am">
+              </td>
+              <td data-title="6:30pm zoom">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
@@ -152,7 +155,7 @@
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am en persona">
+              <td data-title="6:30pm en persona">
               </td>
               <td data-title="1pm en persona">
               </td>
@@ -191,9 +194,11 @@
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am zoom">
+              <td data-title="9:30am zoom">
               </td>
-              <td data-title="6:30am en persona">
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
               </td>
               <td data-title="1pm en persona">
               </td>
@@ -232,9 +237,11 @@
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am zoom">
+              <td data-title="9:30pm zoom">
               </td>
-              <td data-title="6:30am en persona">
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
@@ -260,13 +267,13 @@
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
@@ -276,20 +283,22 @@
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am zoom">
+              <td data-title="9:30am zoom">
               </td>
-              <td data-title="6:30am en persona">
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
               </td>
               <td data-title="1pm en persona">
               </td>
@@ -301,13 +310,13 @@
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
@@ -317,34 +326,36 @@
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am zoom">
+              <td data-title="9:30am zoom">
+              </td>
+              <td data-title="6:30pm zoom">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am en persona">
+              <td data-title="6:30pm en persona">
               </td>
               <td data-title="1pm en persona">
               </td>
@@ -356,13 +367,13 @@
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
@@ -372,33 +383,35 @@
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am zoom">
+              <td data-title="9:30am zoom">
               </td>
-              <td data-title="6:30am en persona">
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
               </td>
               <td data-title="1pm en persona">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
@@ -411,13 +424,13 @@
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
@@ -427,20 +440,22 @@
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
                     <OPTION class="selecth">0</OPTION>
-                    <OPTION class="selecth" >1 hora</OPTION>
-                    <OPTION class="selecth" >2 hora</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
                     <OPTION class="selecth">3 hora</OPTION>
                     <OPTION class="selecth">4 hora</OPTION>
                     <OPTION class="selecth">5 hora</OPTION>
                     <OPTION class="selecth">6 hora</OPTION>
-                    <OPTION class="selecth" >7 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
                     <OPTION class="selecth">8 hora</OPTION>
                   </SELECT>
                 </FORM>
               </td>
-              <td data-title="6:30am zoom">
+              <td data-title="9:30am zoom">
               </td>
-              <td data-title="6:30am en persona">
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
               </td>
               <td data-title="1pm en persona">
               </td>
