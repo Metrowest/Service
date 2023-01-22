@@ -946,12 +946,12 @@ iframe {
 }
 
 #no-more-tables1 tr {
-    background-color: #633000;
+    background-color: #03468c;
     color: #fff;
 }
 
 .no-more-tables1 tbody tr:last-of-type {
-    border-bottom: 2px solid #633000
+    border-bottom: 2px solid #03468c;
 }
 
 option,
@@ -978,18 +978,19 @@ select {
 .buttong {
     font-size: 1em;
     padding: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: 2px solid #001428;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    background-color: #03468c;
+    background-color: #f4fc04;
   }
 
 .buttong:hover {
-    background: #070707;
+    background: #000000;
     border: 2px solid #020202;
+    color: rgb(255, 255, 255);
 }
 
 .buttonh {
