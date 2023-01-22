@@ -86,3 +86,19 @@ td {
   margin: 10px 0 40px 0;
   font-size: 18px;
 }
+
+#nombre {
+  font-size: 30px;
+  background-color: #95fefe;
+  border-radius: 5px;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  text-align: center;
+  border: none;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  border-bottom: 2px solid #005691;
+  margin-top: 20px;
+}
