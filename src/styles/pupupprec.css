@@ -1,13 +1,11 @@
 
 
-.popup{
+.popup {
   background-color: #9fd7ff;
   padding: 30px 40px;
-  position: fixed;
   transform: translate(-50%,-50%);
   left: 50%;
   top: 450px;
-  border-radius: 8px;
   font-family: "Poppins",sans-serif;
   display: none;
   text-align: center;
@@ -15,6 +13,10 @@
   object-fit: cover;
   object-position: bottom;
   max-width: 300px;
+  position: fixed;
+  border-radius: 50px;
+  overflow-y: scroll !important;
+  max-height: 300px;
 }
 .popup button{
     display: block;
