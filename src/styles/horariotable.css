@@ -91,7 +91,7 @@ td {
   font-size: 30px;
   background-color: #95fefe;
   border-radius: 5px;
-  max-width: 100%;
+  max-width: 275px;
   position: relative;
   display: flex;
   text-align: center;
@@ -100,7 +100,7 @@ td {
   border-bottom-style: none;
   border-bottom-width: medium;
   border-bottom: 2px solid #005691;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .formulario__submit3 {
