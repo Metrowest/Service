@@ -531,15 +531,11 @@ option {
 }
 
 #g3 {
-    background-color: blue;
+    background-color: #002851;
 }
 
 #g4 {
     background-color: red;
-}
-
-#g5 {
-    background-color: rgb(255, 97, 2);
 }
 
 #g6 {
@@ -977,3 +973,27 @@ select {
     margin: 5px;
     border-bottom: 2px solid #000000;
 }
+
+#a2 {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #03549a;
+    border-radius: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  #a2:hover {
+    background-color: transparent;
+    color: #ffffff;
+    background: #000000;
+  }
