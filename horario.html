@@ -85,6 +85,9 @@
       </button>
       <h2>      <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre y apellido">
 
+        <button id="a2" class="button-print-or-save-document">
+          <img title="territorio1" class="g3" src="public/assets/img/print.png">
+          Print or Save Document</button>
 
       </h2>
       <button id="a2" onclick="window.location.href = 'precursorado.html';">
@@ -498,9 +501,15 @@
 
   <!--horario print-->
   <script>
-    function printFunction() {
-      window.print();
-    }
+const buttonPrintOrSaveDocument = document.querySelector(
+	".button-print-or-save-document"
+);
+
+function printOrSave() {
+	window.print();
+}
+
+buttonPrintOrSaveDocument.addEventListener("click", printOrSave);
   </script>
 
   <!-- required stellarnav-->
