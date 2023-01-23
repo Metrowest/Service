@@ -930,8 +930,6 @@ iframe {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     text-align: center;
-    padding: 5px;
-    font-size: 18px;
 }
 
 #no-more-tables1 td {
@@ -969,7 +967,6 @@ select {
     outline: 0;
     transition: .3s;
     text-align: center;
-    padding: 5px;
     margin: 5px;
     border-bottom: 2px solid #000000;
 }
