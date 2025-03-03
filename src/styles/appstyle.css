@@ -496,6 +496,7 @@ option {
     color: #000;
     text-align: center;
     margin: auto;
+    min-width: 150px;
 }
 
 #no-more-tables th {
