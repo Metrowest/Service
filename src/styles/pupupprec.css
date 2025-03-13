@@ -16,7 +16,7 @@
   position: fixed;
   border-radius: 50px;
   overflow-y: scroll !important;
-  max-height: 350px;
+  max-height: 500px;
 }
 .popup button{
     display: block;
