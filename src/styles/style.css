@@ -56,7 +56,7 @@ body {
     color: #f8f8f8;
     margin: 20px 0 40px;
 }
-   
+
 .item .content {
     padding: 5px;
     font-family: "Quicksand", sans-serif;
@@ -97,7 +97,7 @@ body {
 
 @media screen and (max-width: 1024px) {
     .item {
-        width: calc(33.3vw - 20px);
+        width: calc(50vw - 20px);
     }
 
     .direction {
