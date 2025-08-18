@@ -17,17 +17,15 @@ body {
 .header {
     text-align: center;
     color: white;
-    background: #03468c;
-    padding-top: 20px;
+
 }
 
 .header a {
-    padding: 30px 0 0;
     display: block;
     font-size: 48px;
     text-decoration: none;
     color: white;
-    margin-top: 40px;
+
 }
 
 .header p {
@@ -50,7 +48,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 15px;
     line-height: 1.7;
 }
 

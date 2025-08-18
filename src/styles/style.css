@@ -82,7 +82,7 @@ body {
     width: 500px;
     max-width: 100%;
     overflow: auto;
-    margin: 100px auto 50px;
+    margin: 30px auto 50px;
     scroll-behavior: smooth;
     scroll-snap-type: both;
     background: radial-gradient(circle, rgb(12, 28, 115) 25%, rgb(13, 12, 12) 60%);
