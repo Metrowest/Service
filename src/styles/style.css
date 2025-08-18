@@ -49,12 +49,12 @@ body {
     margin-bottom: 10px;
 }
 
-#title>h1 {
+#formList>h1 {
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
     color: #f8f8f8;
-    margin: 20px;
+    margin: 20px 0 40px;
 }
    
 .item .content {
@@ -82,7 +82,7 @@ body {
     width: 500px;
     max-width: 100%;
     overflow: auto;
-    margin: 20px auto 50px;
+    margin: 100px auto 50px;
     scroll-behavior: smooth;
     scroll-snap-type: both;
     background: radial-gradient(circle, rgb(12, 28, 115) 25%, rgb(13, 12, 12) 60%);
