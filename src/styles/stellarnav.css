@@ -111,7 +111,6 @@
 /* dark theme */
 .stellarnav.dark {
     background: #002851;
-	margin-top: -15px;
 	height: 110px;
 }
 
@@ -416,6 +415,7 @@ body.stellarnav-noscroll-x {
 .stellarnav.dark.left .menu-toggle,
 .stellarnav.dark.right .menu-toggle {
 	border-bottom: 0;
+	display: flex;
 }
 
 .stellarnav.dark .third:first-child,
