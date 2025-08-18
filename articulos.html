@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest Service</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Service app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="192">
+  <meta property="og:image:height" content="192">
+  <meta property="og:description"
+    content="Esta aplicaci&oacute;n le proveer&aacute; el plan de emergencias y algunas herramientas para el servicio.">
+  <meta property="og:title" content="Metrowest Service">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons2/android-chrome-192x192.png?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/desastre.html">
+
+  <!-- Boxicons CDN Link Nav var pequwno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Guide" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico" sizes="16x16" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <script type="module" href="/src/app-index.ts"></script>
+
+  <!-- required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/style.css">
+  <!-- required -->
+
+  <!--SW-->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/Service/sw.js',
+        { scope: '/Service/' }
+      )
+    }
+  </script>
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+</head>
+
+<body>
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+
+      <li>
+        <a href="desastre.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+          Plan ante un<br>desastre natural
+        </a>
+      </li>
+      <li>
+        <a href="Rotacion.html">
+          <i><img title="android" class="img6" src="public/assets/img/precursor5.png"></i>
+          Lugar de salida<br>sábados 9:30am
+        </a>
+      </li>
+      <li>
+        <a href="interes.html">
+          <i><img title="android" class="img6" src="public/assets/img/Interesados.webp"></i>
+          Persona que<br>mostro interes
+        </a>
+      </li>
+      <li>
+        <a href="territorios.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+          Acceso a los<br>Territorios
+        </a>
+      </li>
+      <li>
+        <a href="precursorado.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/precursor4.webp"></i>
+          Precursorado<br>Auxiliar
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .carusel -->
+  <div id="formList">
+    <h1>Metrowest Service</h1>
+    <div id="list">
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="index.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/casa1.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Home</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="desastre.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/tormenta1.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Plan de emergencias</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="Rotacion.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/precursor5.png"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Rotación de los grupos</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="interes.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/Interesados.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Persona interesada</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="territorios.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/territorio1.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Territorios disponibles</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="precursorado.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/precursor4.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Precursorado auxiliar</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="direction">
+    <button id="prev">
+      < </button>
+        <button id="next"> > </button>
+  </div>
+  <!-- .carusel -->
+
+  <!--body original-->
+  <section class="container">
+    <h2 class="section-header" id="section-header">
+      <i><img class="img4" title="header1" src="public/assets/img/header1.webp"></i>¿TIENE TODO LO NECESARIO?<i>
+        <img class="img4" title="header2" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <div class="content1">
+      <i><img title="articulos" class="imgLogo2" src="public/assets/img/articulos.webp"></i>
+    </div>
+
+    <h3>ARTICULOS</h3>
+
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Backpack</span>
+        <img class="img3" title="bacpack" src="public/assets/img/backpack3.webp">
+        <div class="containerd">
+          <h4>Amazon</h4>
+          <span class="shop-item-price">$47.99</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Linterna</span>
+        <img class="img3" title="linterna" src="public/assets/img/linterna.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$4.98</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Radio </span>
+        <img class="img3" title="radio" src="public/assets/img/radio.webp">
+        <div class="containerd">
+          <h4>Amazon</h4>
+          <span class="shop-item-price">$25.99</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Pilas </span>
+        <img class="img3" title="pilas" src="public/assets/img/baterias.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$20.00</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Botiquín </span>
+        <img class="img3" title="botiquín " src="public/assets/img/botiquín.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$16.99</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Silbato</span>
+        <img class="img3" title="silbato" src="public/assets/img/silbato.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$2.97</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Fósforos </span>
+        <img class="img3" title="fósforos " src="public/assets/img/fósforos.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$5.99</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Herramienta </span>
+        <img class="img3" title="herramienta " src="public/assets/img/herramienta.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$5.94</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Cubiertos </span>
+        <img class="img3" title="cubiertos " src="public/assets/img/cubiertos.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$11.97</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Abrelatas</span>
+        <img class="img3" title="abrelatas" src="public/assets/img/abrelatas.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$3.97</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Poncho </span>
+        <img class="img3" title="poncho " src="public/assets/img/poncho.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$0.98</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Higiene</span>
+        <img class="img3" title="higiene" src="public/assets/img/higiene.webp">
+        <div class="containerd">
+          <h4>Amazon</h4>
+          <span class="shop-item-price">$17.21</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Recipiente impermeable </span>
+        <img class="img3" title="recipiente" src="public/assets/img/recipiente.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$11.48</span>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Cargador </span>
+        <img class="img3" title="cargador " src="public/assets/img/backpack.webp">
+        <div class="containerd">
+          <h4>Walmart</h4>
+          <span class="shop-item-price">$15.90</span>
+        </div>
+      </div>
+    </div>
+    <div class="content1">
+      <h3>MANTÉNGASE A SALVO
+      </h3>
+    </div>
+    <div class="content1">
+      <h3>“El recordatorio de Jehová es fidedigno, hace sabio al inexperto.” (SALMO 19:7)
+      </h3>
+
+      <img title="logolarge" src="public/assets/img/preparacion.webp" class="imgLogo2" />
+    </div>
+
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </section>
+
+  <!-- .my scripts -->
+  <!-- .carusel -->
+  <script src="public/carusel.js"></script>
+  <!-- .carusel -->
+
+  <!-- Memanggil scripts-->
+  <script type="text/javascript"></script>
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+</body>
+
+</html>

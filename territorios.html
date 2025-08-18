@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest Service</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Service app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicaci&oacute;n le proveer&aacute;; el plan de emergencias y algunas herramientas para el servicio.">
+  <meta property="og:title" content="Metrowest Service">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/">
+
+  <!-- Boxicons CDN Link Nav var pequwno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Guide" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <script type="module" href="/src/app-index.ts"></script>
+
+  <!-- required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/style.css">
+  <!-- required -->
+
+  <!--SW-->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/Service/sw.js',
+        { scope: '/Service/' }
+      )
+    }
+  </script>
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+</head>
+
+<body>
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+
+      <li>
+        <a href="desastre.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+          Plan ante un<br>desastre natural
+        </a>
+      </li>
+      <li>
+        <a href="Rotacion.html">
+          <i><img title="android" class="img6" src="public/assets/img/precursor5.png"></i>
+          Lugar de salida<br>sábados 9:30am
+        </a>
+      </li>
+      <li>
+        <a href="interes.html">
+          <i><img title="android" class="img6" src="public/assets/img/Interesados.webp"></i>
+          Persona que<br>mostro interes
+        </a>
+      </li>
+      <li>
+        <a href="territorios.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+          Acceso a los<br>Territorios
+        </a>
+      </li>
+      <li>
+        <a href="precursorado.html">
+          <i><img title="explorer" class="img6" src="public/assets/img/precursor4.webp"></i>
+          Precursorado<br>Auxiliar
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .carusel -->
+  <div id="formList">
+    <h1>Metrowest Service</h1>
+    <div id="list">
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="index.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/casa1.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Home</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="desastre.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/tormenta1.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Plan de emergencias</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="Rotacion.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/precursor5.png"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Rotación de los grupos</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="interes.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/Interesados.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Persona interesada</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="territorios.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/territorio1.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Territorios disponibles</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide post">
+        <div class="item">
+          <a href="precursorado.html">
+            <i><img title="explorer" class="avatar" src="public/assets/img/precursor4.webp"></i>
+          </a>
+          <div class="content">
+            <h1 class="post-name">Precursorado auxiliar</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="direction">
+    <button id="prev">
+      < </button>
+        <button id="next"> > </button>
+  </div>
+  <!-- .carusel -->
+
+  <!--body original-->
+  <section class="container">
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>TERRITORIOS PARA LA PREDICACIÓN<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <div class="containerc">
+      <a href="mapas.html"><i><img title="territorio3" class="img8" src="public/assets/img/territorio3.webp"></i></a>
+
+      <p>Se requiere autorización y un correo electrónico, preferiblemente un Gmail, para acceder a los territorios.
+        <a href="mapas.html" target="_blank"> Vea el mapa de nuestro territorio presionando el mapa pequeño</a>
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        Los territorios están asignados por grupo. Cada encargado de grupo le ha dado acceso a usted según
+        el grupo al que usted fue asignado. Si aún no se le ha dado acceso el sistema no le permite entrar,
+        por favor comuníquese con el encargado de su grupo.
+      </p>
+    </div>
+    <div class="containerb">
+      <a href="recursos.html"><i><img title="recursos" class="img8" src="public/assets/img/recurso.webp"></i></a>
+      <p> El acceso es a través de su correo electrónico Gmail (al presionar
+        el botón correspondiente a su grupo, si aun no ha iniciado sección con su Gmail, le solicitara que
+        seleccione su Gmail y entre a su cuenta). Si tiene dudas puede visitar la pestaña del menú titulada
+        <a href="recursos.html" target="_blank"> Recursos </a>, donde encontrara más detalles de cómo acceder
+        a los territorios.
+      </p>
+    </div>
+    <div class="containera">
+      <p> Si al presionar el botón correspondiente a su grupo no encuentra un territorio y ve una página
+        similar a la de la foto a continuación, solicite a su encargado de grupo que coloque un territorio
+        en la carpeta "Trabajando" para que usted pueda trabajar.
+      </p>
+      <i><img title="territorio" class="img8" src="public/assets/img/territorio.webp"></i>
+    </div>
+
+    <div class="buttons-area">
+      <button class="button1" id="g3"
+        onclick="window.location.href = 'https://drive.google.com/drive/folders/1bi0lxEQ3r62klgC8wJn08rUyhcqyvL0S?usp=sharing';">
+        <img title="territorio1" class="img2" src="public/assets/img/territorio1.webp">Grupo #1
+      </button>
+      <button class="button1" id="g3"
+        onclick="window.location.href = 'https://drive.google.com/drive/folders/1PD8qHO9ywJyO342pFUSyrMQazpSTT7B0?usp=sharing';">
+        <img title="territorio1" class="img2" src="public/assets/img/territorio1.webp">Grupo #2
+      </button>
+      <button class="button1" id="g3"
+        onclick="window.location.href = 'https://drive.google.com/drive/folders/1JrZkpqTt4gsJyOOCN_d2cRFakNWgcR8O?usp=sharing';">
+        <img title="territorio1" class="img2" src="public/assets/img/territorio1.webp">Grupo #3
+      </button>
+      <button class="button1" id="g3"
+        onclick="window.location.href = 'https://drive.google.com/drive/folders/1YsH8DIzxEWxuv2mrMPudL6FbtYd7wpyq?usp=sharing';">
+        <img title="territorio1" class="img2" src="public/assets/img/territorio1.webp">Grupo #4
+      </button>
+      <button class="button1" id="g3"
+        onclick="window.location.href = 'https://drive.google.com/drive/folders/1zTyNy47BD7-Se0CE4Cfl_hAgbyuffXei?usp=sharing';">
+        <img title="territorio1" class="img2" src="public/assets/img/territorio1.webp">Grupo #5
+      </button>
+      <button class="button1" id="g3"
+        onclick="window.location.href = 'https://drive.google.com/drive/folders/1cTSUxL0AqrgqE2LaNDwmnV3qqVQiXu82?usp=sharing';">
+        <img title="territorio1" class="img2" src="public/assets/img/territorio1.webp">Grupo #6
+      </button>
+      <button class="button1" id="g3"
+        onclick="window.location.href = 'https://drive.google.com/drive/folders/1GxntyS9zXk_R1OwmdyUegTIHzCtKdR8h?usp=sharing';">
+        <img title="territorio1" class="img2" src="public/assets/img/territorio1.webp">Grupo #7
+      </button>
+      <button class="button1" id="g3"
+        onclick="window.location.href = 'https://drive.google.com/drive/folders/1gXO_ZtxU1PVZwy_qib-HmDpW23D6TE7M?usp=sharing';">
+        <img title="territorio1" class="img2" src="public/assets/img/territorio1.webp">Grupo #8
+      </button>
+    </div>
+    <div class="containera">
+      <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3><br><i><img title="logo"
+          class="imgLogo2" src="public/assets/img/logolarge.webp" /></i>
+    </div>
+    <div class="formulario__parrafo">
+      <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+    </div>
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </section>
+
+  <!-- .mis scripts -->
+  <!-- .carusel -->
+  <script src="public/carusel.js"></script>
+  <!-- .carusel -->
+
+  <!-- Memanggil scripts-->
+  <script type="text/javascript"></script>
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+
+</body>
+
+</html>
