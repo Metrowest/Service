@@ -24,7 +24,7 @@ body {
 .item {
     border-radius: 15px;
     width: 110px;
-    height: 150px;
+    height: 120px;
     background: #283883;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -40,13 +40,14 @@ body {
     display: block;
     margin-left: auto;
     width: auto;
-    height: 80px;
+    height: 50px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 10px 15px #7e878d;
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 10px;
+    max-width: 70px;
 }
 
 #formList>h1 {
@@ -58,13 +59,12 @@ body {
 }
 
 .item .content {
-    padding: 5px;
     font-family: "Quicksand", sans-serif;
 }
 
 .post-name {
     font-family: "Quicksand", sans-serif;
-    font-size: 0.9rem;
+    font-size: 13px;
     font-weight: 600;
     margin-bottom: 2px;
     overflow: hidden;
@@ -97,7 +97,7 @@ body {
 
 @media screen and (max-width: 1024px) {
     .item {
-        width: calc(50vw - 20px);
+        width: calc(25vw - 20px);
     }
 
     .direction {
@@ -107,7 +107,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .item {
-        width: calc(50vw - 20px);
+        width: calc(25vw - 20px);
     }
 
     .direction {
