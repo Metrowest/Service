@@ -431,7 +431,9 @@ body.stellarnav-noscroll-x {
 }
 
 .stellarnav.mobile {
-	position: relative;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .stellarnav.mobile.fixed {
