@@ -50,7 +50,7 @@
     href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
     onload="document.documentElement.classList.add('sl-theme-dark');">
 
-  <script type="module" href="/src/app-index.ts"></script>    
+  <script type="module" href="/src/app-index.ts"></script>
 
   <!-- required -->
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
@@ -87,8 +87,7 @@
       </button>
       <!--horario imprimir o PDF-->
 
-      <h2> <input type="text" id="nombre" name="nombre" class="input"
-        placeholder="Nombre y apellido">
+      <h2> <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre y apellido">
       </h2>
 
       <button id="a2" onclick="window.location.href = 'precursorado.html';">
@@ -102,6 +101,7 @@
             <tr>
               <th> <a class="buttong" href="#popup1">Ayuda</a></th>
 
+              <th>7:00 am Hoteles<br>Negocios</th>
               <th>Publica<br>carritos</th>
               <th>9:30am<br>salón</th>
               <th>9:30am<br>zoom</th>
@@ -115,6 +115,8 @@
             <tr>
               <td data-title="Horario">lunes</td>
 
+              <td data-title="Hoteles">
+              </td>
               <td data-title="carritos">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
@@ -173,6 +175,8 @@
             <tr>
               <td data-title="Horario">martes</td>
 
+              <td data-title="Hoteles">
+              </td>
               <td data-title="carritos">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
@@ -208,6 +212,22 @@
               <td data-title="9:30am zoom">
               </td>
               <td data-title="6:30pm zoom">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="6:30pm zoom">
               </td>
               <td data-title="6:30pm en persona">
               </td>
@@ -217,6 +237,8 @@
             <tr>
               <td data-title="Horario">miercoles</td>
 
+              <td data-title="Hoteles">
+              </td>
               <td data-title="carritos">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
@@ -275,6 +297,8 @@
             <tr>
               <td data-title="Horario">jueves</td>
 
+              <td data-title="Hoteles">
+              </td>
               <td data-title="carritos">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
@@ -319,6 +343,8 @@
             <tr>
               <td data-title="Horario">viernes</td>
 
+              <td data-title="Hoteles">
+              </td>
               <td data-title="carritos">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
@@ -376,7 +402,23 @@
             </tr>
             <tr>
               <td data-title="Horario">sábado</td>
-
+              
+              <td data-title="Hoteles">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
               <td data-title="carritos">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
@@ -411,6 +453,7 @@
               </td>
               <td data-title="9:30am zoom">
               </td>
+              
               <td data-title="6:30pm zoom">
               </td>
               <td data-title="6:30pm en persona">
@@ -435,7 +478,25 @@
             <tr>
               <td data-title="Horario">domingo</td>
 
+              <td data-title="Hoteles">
+              </td>
               <td data-title="carritos">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
                 <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
                   onSubmit="return dropdown(this.gourl)">
                   <select class="selecth" aria-label="gourl" NAME="gourl">
