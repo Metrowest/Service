@@ -15,7 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1t2MoTcoqedvjghK_K7hOifJkOWdhtcpHC0WptPJa1sg&output=html&usp=sharing');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1LgSOdA6BmzSFDsVANKU2BHZMd7VxFjKe_d8fF95YrKo&output=html&usp=sharing');
     
     query.send(handleQueryResponse);
 }
