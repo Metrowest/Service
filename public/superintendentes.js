@@ -15,7 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1DT9tuKXFkR4hJ86CGB_LK2gcRcmQbmvI9_tb71RALVU&usp=sharing');
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1kAb2BsLQmDCC4wf6rs11PN4L-SN81p84Ck3rmF8OY10&sheet=Superintendentes&usp=sharing&usp=sharing');
     query.setQuery('SELECT * label A "Grupo", B "Nombre", C "Telefono"');
     query.send(handleQueryResponse);
 }
